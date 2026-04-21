@@ -1,0 +1,147 @@
+/* Design tokens: light defaults + dark overrides */
+:root {
+  /* Brand scale (red) */
+  --red-50: #fff1f2;
+  --red-100: #ffe4e6;
+  --red-200: #fecdd3;
+  --red-300: #fda4af;
+  --red-400: #fb7185;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+
+  --red: #c91515;
+  --red-dark: #a01212;
+  --red-light: #e02d2d;
+  --black: #0a0a0a;
+  --white: #fafafa;
+  --accent-blue: #2563eb;
+  --accent-amber: #d97706;
+  --accent-green: #16a34a;
+  --accent-purple: #7c3aed;
+  --accent-cyan: #0891b2;
+  --accent-teal: #0f766e;
+  --accent-rose: #e11d48;
+  --accent-slate: #334155;
+  --success: var(--accent-green);
+  --warning: var(--accent-amber);
+  --info: var(--accent-blue);
+  --danger: var(--red);
+
+  /* Accent tints (useful for badges/chips) */
+  --success-bg: rgba(22, 163, 74, 0.10);
+  --warning-bg: rgba(217, 119, 6, 0.12);
+  --info-bg: rgba(37, 99, 235, 0.10);
+  --danger-bg: rgba(201, 21, 21, 0.10);
+  --gray-50: #f5f5f5;
+  --gray-100: #ebebeb;
+  --gray-200: #d4d4d4;
+  --gray-300: #b0b0b0;
+  --gray-400: #8a8a8a;
+  --gray-500: #6b6b6b;
+  --gray-600: #4a4a4a;
+  --gray-700: #333333;
+  --gray-800: #1f1f1f;
+  --gray-900: #141414;
+  --gray-950: #0b0b0b;
+
+  /* Extra hues (handy for highlights) */
+  --blue-500: #3b82f6;
+  --cyan-500: #06b6d4;
+  --teal-500: #14b8a6;
+  --green-500: #22c55e;
+  --amber-500: #f59e0b;
+  --purple-500: #8b5cf6;
+  --rose-500: #f43f5e;
+  --bg-primary: #fafafa;
+  --bg-secondary: #f0f0f0;
+  --bg-tertiary: #e8e8e8;
+  --bg-card: #ffffff;
+  --bg-header: rgba(250, 250, 250, 0.92);
+  --bg-header-solid: #fafafa;
+  --bg-dark: #0a0a0a;
+  --bg-dark-card: #1a1a1a;
+  --surface-1: var(--bg-primary);
+  --surface-2: var(--bg-secondary);
+  --surface-3: var(--bg-tertiary);
+  --surface-card: var(--bg-card);
+  --hero-bg: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  --hero-overlay: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(245,245,245,0.92) 100%);
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-tertiary: #6b6b6b;
+  --text-muted: #8a8a8a;
+  --text-inverse: #fafafa;
+  --text-on-accent: #ffffff;
+  --border-light: #e0e0e0;
+  --border-medium: #c0c0c0;
+  --border-dark: #333;
+  --border-red: rgba(201, 21, 21, 0.35);
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-md: 0 6px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.15);
+  --shadow-xl: 0 24px 80px rgba(0,0,0,0.2);
+  --shadow-red: 0 12px 40px rgba(201,21,21,0.25);
+  --shadow-hover: 0 16px 50px rgba(0,0,0,0.18);
+  --font-display: 'Barlow Condensed', 'Arial Narrow', Impact, sans-serif;
+  --font-body: 'Barlow', 'Segoe UI', system-ui, sans-serif;
+  --header-height: 72px;
+  --container-max: 1280px;
+  --section-pad-y: 80px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --transition-fast: 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --logo-star-color: #000;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1a1a1a;
+  --bg-card: #1a1a1a;
+  --bg-header: rgba(10, 10, 10, 0.92);
+  --bg-header-solid: #0a0a0a;
+  --surface-1: var(--bg-primary);
+  --surface-2: var(--bg-secondary);
+  --surface-3: var(--bg-tertiary);
+  --surface-card: var(--bg-card);
+  --text-primary: #f0f0f0;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #8a8a8a;
+  --text-muted: #6b6b6b;
+  --border-light: #2a2a2a;
+  --border-medium: #333;
+  --border-red: rgba(224, 45, 45, 0.38);
+  --hero-bg: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  --hero-overlay: linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(26,26,26,0.92) 100%);
+  --logo-star-color: #fff;
+  --accent-blue: #60a5fa;
+  --accent-amber: #fbbf24;
+  --accent-green: #34d399;
+  --accent-purple: #a78bfa;
+  --accent-cyan: #22d3ee;
+  --accent-teal: #2dd4bf;
+  --accent-rose: #fb7185;
+  --accent-slate: #94a3b8;
+  --success: var(--accent-green);
+  --warning: var(--accent-amber);
+  --info: var(--accent-blue);
+  --danger: var(--red-light);
+
+  --success-bg: rgba(52, 211, 153, 0.12);
+  --warning-bg: rgba(251, 191, 36, 0.14);
+  --info-bg: rgba(96, 165, 250, 0.12);
+  --danger-bg: rgba(224, 45, 45, 0.14);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad-y: 56px;
+  }
+}
