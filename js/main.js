@@ -73,18 +73,186 @@ function initHeaderScroll() {
 // ========================================
 function getCategoryImage(category) {
   const images = {
-    cutting: 'img/categories/plate-cutting.jpg',
-    tube: 'img/categories/tube-cutting.jpg',
-    combo: 'img/categories/combined-machines.jpg',
-    welding: 'img/categories/laser-welding.jpg',
-    cleaning: 'img/categories/laser-cleaning.jpg',
-    marking: 'img/categories/laser-marking.jpg'
+    cutting: 'img/categories/plate-cutting.webp',
+    tube: 'img/categories/tube-cutting.webp',
+    combo: 'img/categories/combined-machines.webp',
+    welding: 'img/categories/laser-welding.webp',
+    cleaning: 'img/categories/laser-cleaning.webp',
+    marking: 'img/categories/laser-marking.webp'
   };
   return images[category] || images.cutting;
 }
 
+
+function initPremiumProductSlider() {
+  const bannerEl = document.getElementById('premiumBanner');
+  const categoryEl = document.getElementById('premiumSliderCategory');
+  const infoPanelEl = document.querySelector('.premium-info');
+  const infoTitleEl = document.getElementById('premiumInfoTitle');
+  const infoTextEl = document.getElementById('premiumInfoText');
+  const rightTopEl = document.getElementById('premiumRightTop');
+  const rightMetricEl = document.getElementById('premiumRightMetric');
+  const rightBadgeEl = document.getElementById('premiumRightBadge');
+  const linkEl = document.getElementById('premiumCenterLink');
+  const prevBtn = document.getElementById('premiumSliderPrev');
+  const nextBtn = document.getElementById('premiumSliderNext');
+  const dots = Array.from(document.querySelectorAll('.premium-dot'));
+  if (!bannerEl || !categoryEl || !infoPanelEl || !infoTitleEl || !infoTextEl || !rightTopEl || !rightMetricEl || !rightBadgeEl || !linkEl || !prevBtn || !nextBtn) return;
+
+  const slides = [
+    {
+      categoryKey: 'premiumSlider.plateCutting.category',
+      image: 'img/machines/PlateCutting.webp',
+      href: 'plate-cutting.html',
+      infoTitleKey: 'premiumSlider.plateCutting.infoTitle',
+      infoTextKey: 'premiumSlider.plateCutting.infoText',
+      rightTopKey: 'premiumSlider.overviewLabel',
+      rightMetricKey: 'premiumSlider.plateCutting.metric',
+      rightBadgeKey: 'premiumSlider.plateCutting.badge'
+    },
+    {
+      categoryKey: 'premiumSlider.tubeCutting.category',
+      image: 'img/machines/PipeCutting.webp',
+      href: 'tube-cutting.html',
+      infoTitleKey: 'premiumSlider.tubeCutting.infoTitle',
+      infoTextKey: 'premiumSlider.tubeCutting.infoText',
+      rightTopKey: 'premiumSlider.overviewLabel',
+      rightMetricKey: 'premiumSlider.tubeCutting.metric',
+      rightBadgeKey: 'premiumSlider.tubeCutting.badge'
+    },
+    {
+      categoryKey: 'premiumSlider.combined.category',
+      image: 'img/machines/Combine.webp',
+      href: 'combined-machines.html',
+      infoTitleKey: 'premiumSlider.combined.infoTitle',
+      infoTextKey: 'premiumSlider.combined.infoText',
+      rightTopKey: 'premiumSlider.overviewLabel',
+      rightMetricKey: 'premiumSlider.combined.metric',
+      rightBadgeKey: 'premiumSlider.combined.badge'
+    },
+    {
+      categoryKey: 'premiumSlider.welding.category',
+      image: 'img/machines/welding.webp',
+      href: 'laser-welding.html',
+      infoTitleKey: 'premiumSlider.welding.infoTitle',
+      infoTextKey: 'premiumSlider.welding.infoText',
+      rightTopKey: 'premiumSlider.overviewLabel',
+      rightMetricKey: 'premiumSlider.welding.metric',
+      rightBadgeKey: 'premiumSlider.welding.badge'
+    },
+    {
+      categoryKey: 'premiumSlider.cleaning.category',
+      image: 'img/machines/Cleaning.webp',
+      href: 'laser-cleaning.html',
+      infoTitleKey: 'premiumSlider.cleaning.infoTitle',
+      infoTextKey: 'premiumSlider.cleaning.infoText',
+      rightTopKey: 'premiumSlider.overviewLabel',
+      rightMetricKey: 'premiumSlider.cleaning.metric',
+      rightBadgeKey: 'premiumSlider.cleaning.badge'
+    },
+    {
+      categoryKey: 'premiumSlider.marking.category',
+      image: 'img/machines/marking.webp',
+      href: 'laser-marking.html',
+      infoTitleKey: 'premiumSlider.marking.infoTitle',
+      infoTextKey: 'premiumSlider.marking.infoText',
+      rightTopKey: 'premiumSlider.overviewLabel',
+      rightMetricKey: 'premiumSlider.marking.metric',
+      rightBadgeKey: 'premiumSlider.marking.badge'
+    }
+  ];
+
+  let index = 0;
+  let popTimeout = null;
+  let autoTimer = null;
+
+  function applyPop() {
+    [categoryEl, infoTitleEl, infoTextEl, rightTopEl, rightMetricEl, rightBadgeEl].forEach((el) => {
+      el.classList.remove('premium-pop');
+      void el.offsetWidth;
+      el.classList.add('premium-pop');
+    });
+    if (popTimeout) clearTimeout(popTimeout);
+    popTimeout = setTimeout(() => {
+      [categoryEl, infoTitleEl, infoTextEl, rightTopEl, rightMetricEl, rightBadgeEl].forEach((el) => el.classList.remove('premium-pop'));
+    }, 500);
+  }
+
+  function updateDots(i) {
+    if (!dots.length) return;
+    dots.forEach((dot, idx) => dot.classList.toggle('is-active', idx === i));
+  }
+
+  function render(i) {
+    const slide = slides[i];
+    const t = (key, fallback) => (typeof getTranslation === 'function' ? getTranslation(key, fallback) : fallback) || fallback;
+    categoryEl.textContent = t(slide.categoryKey, slide.categoryKey);
+    infoTitleEl.textContent = t(slide.infoTitleKey, slide.infoTitleKey);
+    infoTextEl.textContent = t(slide.infoTextKey, slide.infoTextKey);
+    rightTopEl.textContent = t(slide.rightTopKey, 'CATEGORY OVERVIEW');
+    rightMetricEl.textContent = t(slide.rightMetricKey, slide.rightMetricKey);
+    rightBadgeEl.textContent = t(slide.rightBadgeKey, slide.rightBadgeKey);
+    linkEl.href = slide.href;
+    linkEl.setAttribute('aria-label', t(slide.categoryKey, ''));
+    infoPanelEl.classList.remove('is-visible');
+    linkEl.classList.remove('is-ready');
+    void linkEl.offsetWidth;
+    linkEl.style.backgroundImage = `url('${encodeURI(slide.image)}')`;
+    requestAnimationFrame(() => linkEl.classList.add('is-ready'));
+    setTimeout(() => {
+      infoPanelEl.classList.add('is-visible');
+    }, 1100);
+    updateDots(i);
+    applyPop();
+  }
+
+  function goTo(nextIndex) {
+    index = ((nextIndex % slides.length) + slides.length) % slides.length;
+    render(index);
+  }
+
+  function startAuto() {
+    if (autoTimer) return;
+    autoTimer = setInterval(() => {
+      goTo(index + 1);
+    }, 3000);
+  }
+
+  function stopAuto() {
+    if (!autoTimer) return;
+    clearInterval(autoTimer);
+    autoTimer = null;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    goTo(index - 1);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    goTo(index + 1);
+  });
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      const nextIndex = Number(dot.getAttribute('data-premium-dot'));
+      if (Number.isNaN(nextIndex)) return;
+      goTo(nextIndex);
+    });
+  });
+
+  bannerEl.addEventListener('mouseenter', stopAuto);
+  bannerEl.addEventListener('mouseleave', startAuto);
+  bannerEl.addEventListener('focusin', stopAuto);
+  bannerEl.addEventListener('focusout', startAuto);
+
+  render(index);
+  startAuto();
+
+  document.addEventListener('hgstar-lang', () => { render(index); });
+}
+
 function formatPrice(price, currency) {
-  if (!price || price <= 1) return 'Quote on Request';
+  if (!price || price <= 1) return (typeof getTranslation === 'function' ? getTranslation('quoteOnRequest', 'Quote on Request') : 'Quote on Request');
   const symbol = currency === 'EUR' ? '€' : '$';
   return `${symbol}${price.toLocaleString()}`;
 }
@@ -725,6 +893,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadTranslations().then(() => {
     initLanguage();
     updateAdvancedFilterLabels();
+    initPremiumProductSlider();
   });
   initTheme();
   initMobileNav();

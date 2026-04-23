@@ -41,7 +41,12 @@
       "description": "Factory-direct solutions for sheet metal fabricators, OEMs and industrial manufacturers. Technical consultation, worldwide shipping, installation, training and after-sales support. <strong>Warranty:</strong> 2-year standard on the complete machine; laser source covered up to 3 years on selected high-power models (12–30 kW), from qualified acceptance at your facility.",
       "cta1": "Request a Quote",
       "cta2": "Browse Machines",
-      "cta3": "Download Catalog"
+      "cta3": "Download Catalog",
+      "stat1": "Years Experience",
+      "stat2": "Countries Served",
+      "stat3": "Max Laser Power",
+      "stat4": "Warranty Available",
+      "stat5": "Technical Support"
     },
     "categories": {
       "label": "Product Categories",
@@ -515,7 +520,75 @@
       "answer5": "Carbon steel, stainless steel, aluminum, brass, copper, and galvanized sheets. For pipe cutting machines: round tubes, square tubes, rectangular tubes and oval tubes from steel and stainless steel. Application consulting for specific materials on request.",
       "question6": "How do I get a quote?",
       "answer6": "Use the contact form on this page or email info@hg-star.com. Please describe your application, desired material thickness, cutting format and desired automation level – we respond within 1–2 business days with a detailed quotation."
-    }
+    },
+    "legal": {
+      "pageTitle": "Legal Notice & Terms of Use",
+      "pageSubtitle": "Terms and conditions for use of the HG Star Technology website.",
+      "sec1Title": "1. Website Operator",
+      "sec1Text": "HG Star Technology Co., Ltd. is responsible for the content of this website. For inquiries, contact us at <a href=\"mailto:info@hg-star.com\" style=\"color:var(--red)\">info@hg-star.com</a> or via the contact form.",
+      "sec2Title": "2. Intellectual Property Rights",
+      "sec2Text": "All content on this website, including text, graphics, logos, images, and software, is protected by copyright and intellectual property laws. Unauthorized reproduction, distribution or modification is prohibited.",
+      "sec3Title": "3. Product Information",
+      "sec3Text": "Product descriptions, specifications and pricing information are provided for informational purposes. While we strive for accuracy, we do not guarantee that all information is complete or error-free. Technical specifications are subject to change without notice.",
+      "sec4Title": "4. Disclaimer of Warranties",
+      "sec4Text": "This website is provided \"as is\" without warranties of any kind, either express or implied. We do not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components.",
+      "sec5Title": "5. Limitation of Liability",
+      "sec5Text": "In no event shall HG Star Technology be liable for any indirect, incidental, special, or consequential damages arising from your use of this website or the products and services offered herein.",
+      "sec6Title": "6. External Links",
+      "sec6Text": "This website may contain links to external websites. We are not responsible for the content, accuracy, or practices of linked websites. Please review their terms before using their services.",
+      "sec7Title": "7. Governing Law",
+      "sec7Text": "These terms are governed by the laws of the People's Republic of China. Any disputes shall be resolved according to Chinese law.",
+      "sec8Title": "8. Contact Information",
+      "sec8Text": "For inquiries or complaints regarding these terms, contact us at <a href=\"mailto:info@hg-star.com\" style=\"color:var(--red)\">info@hg-star.com</a>.",
+      "lastUpdated": "Last updated: January 2025"
+    },
+    "premiumSlider": {
+      "label": "Featured Category",
+      "overviewLabel": "CATEGORY OVERVIEW",
+      "plateCutting": {
+        "category": "Plate Cutting",
+        "infoTitle": "Fiber Laser Plate Cutting",
+        "infoText": "Sheet metal laser cutting systems from 1.5kW to 30kW with work areas from 3x1.5m to 8x2.5m and optional exchange tables.",
+        "metric": "15 MODELS",
+        "badge": "1.5kW TO 30kW RANGE"
+      },
+      "tubeCutting": {
+        "category": "Tube Cutting",
+        "infoTitle": "CNC Tube Cutting",
+        "infoText": "Double-deck clamping with automatic loading and unloading for round, square, rectangular, and oval tubes up to 500 mm.",
+        "metric": "7 MODELS",
+        "badge": "UP TO 500 MM DIAMETER"
+      },
+      "combined": {
+        "category": "Combined Machines",
+        "infoTitle": "Combined Plate + Tube",
+        "infoText": "One machine for two tasks: sheet cutting and pipe cutting without changeover for variable production requirements.",
+        "metric": "5 MODELS",
+        "badge": "SHEET + PIPE IN ONE"
+      },
+      "welding": {
+        "category": "Laser Welding",
+        "infoTitle": "Handheld Laser Welding",
+        "infoText": "Wobble welding heads, multiple weld modes, intuitive operation, and coaxial gas supply for steel, stainless steel, and aluminum.",
+        "metric": "5 MODELS",
+        "badge": "MULTI-MATERIAL WELDING"
+      },
+      "cleaning": {
+        "category": "Laser Cleaning",
+        "infoTitle": "Laser Cleaning Systems",
+        "infoText": "6 scan modes and low-maintenance operation for rust removal, oil removal, coating removal, weld cleaning, and surface roughening.",
+        "metric": "4 MODELS",
+        "badge": "6 SCAN MODES"
+      },
+      "marking": {
+        "category": "Laser Marking",
+        "infoTitle": "Fiber / CO₂ / UV Marking",
+        "infoText": "Fiber, CO₂, and UV wavelengths for universal marking applications with compact design, easy operation, and EZCAD software.",
+        "metric": "4 MODELS",
+        "badge": "MULTI-WAVELENGTH PLATFORM"
+      }
+    },
+    "quoteOnRequest": "Quote on Request"
   },
   "de": {
     "nav": {
@@ -559,7 +632,12 @@
       "description": "Direkt ab Fabrik für Blechbearbeiter, OEMs und industrielle Fertiger. Technische Beratung, weltweiter Versand, Installation, Schulung und After-Sales-Support. <strong>Garantie:</strong> 2 Jahre Standard auf die komplette Maschine; Laserquelle bis zu 3 Jahre bei ausgewählten Hochleistungsmodellen (12–30 kW), ab qualifizierter Abnahme bei Ihnen.",
       "cta1": "Angebot anfordern",
       "cta2": "Maschinen ansehen",
-      "cta3": "Katalog anfordern"
+      "cta3": "Katalog anfordern",
+      "stat1": "Jahre Erfahrung",
+      "stat2": "Länder beliefert",
+      "stat3": "Max. Laserleistung",
+      "stat4": "Garantie verfügbar",
+      "stat5": "Technischer Support"
     },
     "categories": {
       "label": "Produktkategorien",
@@ -1033,6 +1111,74 @@
       "answer5": "Kohlenstoffstahl, Edelstahl, Aluminium, Messing, Kupfer und galvanisierte Bleche. Bei Rohrschneidmaschinen: Rundrohr, Vierkantrohr, Rechteckrohr und Ovalrohr aus Stahl und Edelstahl. Applikationsberatung für spezifische Materialien auf Anfrage.",
       "question6": "Wie erhalte ich ein Angebot?",
       "answer6": "Nutzen Sie das Kontaktformular auf dieser Seite oder schreiben Sie direkt an info@hg-star.com. Bitte beschreiben Sie Ihr Anwendungsfall, gewünschte Materialstärke, Schneidformat und gewünschte Automatisierungsstufe – wir antworten innerhalb von 1–2 Werktagen mit einem detaillierten Angebot."
-    }
+    },
+    "legal": {
+      "pageTitle": "Impressum & Nutzungsbedingungen",
+      "pageSubtitle": "Nutzungsbedingungen der HG Star Technology Website.",
+      "sec1Title": "1. Webseitenbetreiber",
+      "sec1Text": "HG Star Technology Co., Ltd. ist verantwortlich für den Inhalt dieser Website. Für Anfragen kontaktieren Sie uns unter <a href=\"mailto:info@hg-star.com\" style=\"color:var(--red)\">info@hg-star.com</a> oder über das Kontaktformular.",
+      "sec2Title": "2. Geistige Eigentumsrechte",
+      "sec2Text": "Alle Inhalte dieser Website, einschließlich Texte, Grafiken, Logos, Bilder und Software, sind durch Urheberrechts- und Immaterialgütergesetze geschützt. Unbefugte Vervielfältigung, Verbreitung oder Änderung ist untersagt.",
+      "sec3Title": "3. Produktinformationen",
+      "sec3Text": "Produktbeschreibungen, Spezifikationen und Preisinformationen dienen ausschließlich Informationszwecken. Obwohl wir nach Vollständigkeit streben, garantieren wir nicht, dass alle Angaben korrekt oder fehlerfrei sind. Technische Spezifikationen können ohne Vorankündigung geändert werden.",
+      "sec4Title": "4. Haftungsausschluss",
+      "sec4Text": "Diese Website wird ohne ausdrückliche oder stillschweigende Gewährleistungen bereitgestellt. Wir garantieren nicht den ununterbrochenen, fehlerfreien oder virenfreien Betrieb der Website.",
+      "sec5Title": "5. Haftungsbeschränkung",
+      "sec5Text": "HG Star Technology haftet in keinem Fall für mittelbare, zufällige, besondere oder Folgeschäden, die aus der Nutzung dieser Website oder der hier angebotenen Produkte und Dienstleistungen entstehen.",
+      "sec6Title": "6. Externe Links",
+      "sec6Text": "Diese Website kann Links zu externen Websites enthalten. Wir sind nicht für den Inhalt, die Richtigkeit oder die Praktiken verlinkter Websites verantwortlich. Bitte prüfen Sie deren Nutzungsbedingungen vor der Inanspruchnahme ihrer Dienste.",
+      "sec7Title": "7. Anwendbares Recht",
+      "sec7Text": "Diese Bedingungen unterliegen dem Recht der Volksrepublik China. Streitigkeiten werden nach chinesischem Recht beigelegt.",
+      "sec8Title": "8. Kontaktinformationen",
+      "sec8Text": "Für Anfragen oder Beanstandungen zu diesen Bedingungen wenden Sie sich an <a href=\"mailto:info@hg-star.com\" style=\"color:var(--red)\">info@hg-star.com</a>.",
+      "lastUpdated": "Zuletzt aktualisiert: Januar 2025"
+    },
+    "premiumSlider": {
+      "label": "Ausgewählte Kategorie",
+      "overviewLabel": "KATEGORIEÜBERSICHT",
+      "plateCutting": {
+        "category": "Blechschneiden",
+        "infoTitle": "Faserlaser-Blechschneiden",
+        "infoText": "Blechlaserschneidsysteme von 1,5 kW bis 30 kW mit Arbeitsflächen von 3×1,5 m bis 8×2,5 m und optionalen Wechseltischen.",
+        "metric": "15 MODELLE",
+        "badge": "1,5 kW BIS 30 kW"
+      },
+      "tubeCutting": {
+        "category": "Rohrschneiden",
+        "infoTitle": "CNC-Rohrschneiden",
+        "infoText": "Doppelspannsysteme mit automatischem Be- und Entladen für Rund-, Vierkant-, Rechteck- und Ovalrohre bis 500 mm.",
+        "metric": "7 MODELLE",
+        "badge": "BIS 500 MM DURCHMESSER"
+      },
+      "combined": {
+        "category": "Kombimaschinen",
+        "infoTitle": "Blech + Rohr kombiniert",
+        "infoText": "Eine Maschine für zwei Aufgaben: Blechschneiden und Rohrschneiden ohne Umrüstung für variable Produktionsanforderungen.",
+        "metric": "5 MODELLE",
+        "badge": "BLECH + ROHR IN EINER"
+      },
+      "welding": {
+        "category": "Laserschweißen",
+        "infoTitle": "Handgehaltenes Laserschweißen",
+        "infoText": "Wobble-Schweißköpfe, mehrere Schweißmodi, intuitive Bedienung und koaxiale Gaszufuhr für Stahl, Edelstahl und Aluminium.",
+        "metric": "5 MODELLE",
+        "badge": "MULTI-MATERIAL-SCHWEISSEN"
+      },
+      "cleaning": {
+        "category": "Laserreinigung",
+        "infoTitle": "Laserreinigungssysteme",
+        "infoText": "6 Scanmodi und wartungsarmer Betrieb für Rostentfernung, Ölentfernung, Beschichtungsentfernung, Schweißnahtpflege und Oberflächenaufrauhung.",
+        "metric": "4 MODELLE",
+        "badge": "6 SCANMODI"
+      },
+      "marking": {
+        "category": "Lasermarkierung",
+        "infoTitle": "Faser / CO₂ / UV Markierung",
+        "infoText": "Faser-, CO₂- und UV-Wellenlängen für universelle Markierungsanwendungen mit kompaktem Design, einfacher Bedienung und EZCAD-Software.",
+        "metric": "4 MODELLE",
+        "badge": "MULTI-WELLENLÄNGEN-PLATTFORM"
+      }
+    },
+    "quoteOnRequest": "Preis auf Anfrage"
   }
 }
