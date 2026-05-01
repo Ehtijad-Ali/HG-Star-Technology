@@ -50,8 +50,10 @@ function initDesktopDropdowns() {
     const trigger = item.querySelector('.nav-trigger');
     const menu = item.querySelector('.nav-dropdown');
     if (!trigger || !menu) return;
+    let closeTimer;
 
     const open = () => {
+      clearTimeout(closeTimer);
       closeAllDropdowns();
       item.classList.add('is-open');
       trigger.setAttribute('aria-expanded', 'true');
@@ -62,20 +64,22 @@ function initDesktopDropdowns() {
       trigger.setAttribute('aria-expanded', 'false');
     };
 
+    const scheduleClose = () => {
+      closeTimer = setTimeout(close, 120);
+    };
+
+    // Hover: open immediately, close with short delay so cursor can move to menu
+    item.addEventListener('mouseenter', open);
+    item.addEventListener('mouseleave', scheduleClose);
+
+    // Keep click/keyboard working for accessibility
     trigger.addEventListener('click', (e) => {
       e.preventDefault();
-      const isOpen = item.classList.contains('is-open');
-      if (isOpen) close();
-      else open();
+      item.classList.contains('is-open') ? close() : open();
     });
 
-    // Removed hover events for simple click-only dropdown
-
     trigger.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        close();
-        trigger.focus();
-      }
+      if (e.key === 'Escape') { close(); trigger.focus(); }
       if (e.key === 'ArrowDown') {
         open();
         const first = menu.querySelector('a');
@@ -84,16 +88,12 @@ function initDesktopDropdowns() {
     });
 
     menu.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        close();
-        trigger.focus();
-      }
+      if (e.key === 'Escape') { close(); trigger.focus(); }
     });
   });
 
   document.addEventListener('click', (e) => {
-    const inside = e.target.closest('.nav-item.has-dropdown');
-    if (!inside) closeAllDropdowns();
+    if (!e.target.closest('.nav-item.has-dropdown')) closeAllDropdowns();
   });
 
   document.addEventListener('keydown', (e) => {

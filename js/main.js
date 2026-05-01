@@ -73,12 +73,12 @@ function initHeaderScroll() {
 // ========================================
 function getCategoryImage(category) {
   const images = {
-    cutting: 'img/categories/plate-cutting.webp',
-    tube: 'img/categories/tube-cutting.webp',
-    combo: 'img/categories/combined-machines.webp',
-    welding: 'img/categories/laser-welding.webp',
-    cleaning: 'img/categories/laser-cleaning.webp',
-    marking: 'img/categories/laser-marking.webp'
+    cutting: 'img/machines/PlateCutting.webp',
+    tube: 'img/machines/PipeCutting.webp',
+    combo: 'img/machines/Combine.webp',
+    welding: 'img/machines/welding.webp',
+    cleaning: 'img/machines/Cleaning.webp',
+    marking: 'img/machines/marking.webp'
   };
   return images[category] || images.cutting;
 }
@@ -480,7 +480,26 @@ function renderProductCard(product) {
 function renderProducts(containerId, productList) {
   const container = document.getElementById(containerId);
   if (!container) return;
-  container.innerHTML = productList.map(renderProductCard).join('');
+
+  const seriesOrder = [];
+  const seriesGroups = {};
+  productList.forEach(p => {
+    const s = p.series || '';
+    if (!seriesGroups[s]) { seriesGroups[s] = []; seriesOrder.push(s); }
+    seriesGroups[s].push(p);
+  });
+
+  if (seriesOrder.length > 1) {
+    let html = '';
+    seriesOrder.forEach(series => {
+      const count = seriesGroups[series].length;
+      html += `<div class="series-group-header"><span class="series-group-label">${series}</span><span class="series-group-count">${count} model${count !== 1 ? 's' : ''}</span></div>`;
+      html += seriesGroups[series].map(renderProductCard).join('');
+    });
+    container.innerHTML = html;
+  } else {
+    container.innerHTML = productList.map(renderProductCard).join('');
+  }
   initProductCards();
 }
 
@@ -620,8 +639,99 @@ function initModal() {
 }
 
 // ========================================
-// Filter & Search
+// Catalog Initialisation
 // ========================================
+function initCatalog() {
+  const container = document.getElementById('productsContainer');
+  if (!container) return;
+
+  const pageCategory = document.body.dataset.category || 'all';
+  const plateCuttingWhitelist = ['plate-01', 'plate-02', 'plate-03', 'plate-04', 'plate-05', 'plate-07', 'plate-08', 'plate-09', 'plate-14', 'plate-17', 'plate-18', 'plate-23', 'plate-27', 'plate-29', 'plate-33'];
+  const tubeCuttingWhitelist = ['tube-36', 'tube-38', 'tube-39', 'tube-46', 'tube-47', 'tube-54'];
+  const comboMachinesWhitelist = ['combo-65', 'combo-66', 'combo-69', 'combo-76', 'combo-82'];
+  const weldingWhitelist = ['weld-01', 'weld-02', 'weld-03', 'weld-04', 'weld-06'];
+  const cleaningWhitelist = ['clean-08', 'clean-09', 'clean-11', 'clean-12'];
+  const markingWhitelist = ['mark-13', 'mark-14', 'mark-15', 'mark-16'];
+
+  // Build the base product list for this page (category + whitelist)
+  let baseProducts = [...products];
+  if (pageCategory !== 'all') {
+    baseProducts = baseProducts.filter(p => p.category === pageCategory);
+    if (pageCategory === 'cutting') baseProducts = baseProducts.filter(p => plateCuttingWhitelist.includes(p.id));
+    else if (pageCategory === 'tube') baseProducts = baseProducts.filter(p => tubeCuttingWhitelist.includes(p.id));
+    else if (pageCategory === 'combo') baseProducts = baseProducts.filter(p => comboMachinesWhitelist.includes(p.id));
+    else if (pageCategory === 'welding') baseProducts = baseProducts.filter(p => weldingWhitelist.includes(p.id));
+    else if (pageCategory === 'cleaning') baseProducts = baseProducts.filter(p => cleaningWhitelist.includes(p.id));
+    else if (pageCategory === 'marking') baseProducts = baseProducts.filter(p => markingWhitelist.includes(p.id));
+  }
+
+  let currentSeries = 'all';
+  let currentSpecKey = '';
+  let currentSpecVal = '';
+  let currentSearch = '';
+
+  function applyFilters() {
+    let filtered = [...baseProducts];
+
+    if (currentSeries !== 'all') {
+      filtered = filtered.filter(p => p.series === currentSeries);
+    }
+    if (currentSpecKey && currentSpecVal) {
+      filtered = filtered.filter(p => {
+        const v = p.specs && p.specs[currentSpecKey];
+        return v != null && String(v).trim() === currentSpecVal;
+      });
+    }
+    if (currentSearch) {
+      const q = currentSearch.toLowerCase();
+      filtered = filtered.filter(p =>
+        p.model.toLowerCase().includes(q) ||
+        p.subtitle.toLowerCase().includes(q) ||
+        (p.specs && Object.values(p.specs).some(v => String(v).toLowerCase().includes(q)))
+      );
+    }
+
+    renderProducts('productsContainer', filtered);
+
+    if (filtered.length === 0) {
+      container.innerHTML = `
+        <div style="grid-column:1/-1;text-align:center;padding:60px 20px">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--text-muted);margin:0 auto 16px;display:block">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <h3 style="font-family:var(--font-body);font-size:1.125rem;margin-bottom:8px">No machines found</h3>
+          <p style="color:var(--text-muted);font-size:0.875rem">Try adjusting your search or filter criteria</p>
+        </div>
+      `;
+    }
+  }
+
+  // Wire up series/spec chip buttons
+  const chips = document.querySelectorAll('.filter-chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentSeries = chip.dataset.series || 'all';
+      currentSpecKey = chip.dataset.specKey || '';
+      currentSpecVal = chip.dataset.specVal || '';
+      applyFilters();
+    });
+  });
+
+  // Wire up search input
+  const searchInput = document.getElementById('productSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', e => {
+      currentSearch = e.target.value;
+      applyFilters();
+    });
+  }
+
+  // Initial render
+  applyFilters();
+}
+
 function maxWorkAreaMeters(product) {
   const wa = product.specs && product.specs['Work Area'];
   if (!wa || String(wa).toLowerCase() === 'nan') return null;
@@ -639,7 +749,7 @@ function exchangeTableYes(product) {
   return s.includes('yes');
 }
 
-function initFilter() {
+function _REMOVE_initFilter() {
   const chips = document.querySelectorAll('.filter-chip');
   const searchInput = document.getElementById('productSearch');
   const container = document.getElementById('productsContainer');
@@ -892,7 +1002,6 @@ const FAQModule = (() => {
 document.addEventListener('DOMContentLoaded', () => {
   loadTranslations().then(() => {
     initLanguage();
-    updateAdvancedFilterLabels();
     initPremiumProductSlider();
   });
   initTheme();
@@ -900,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initHeaderScroll();
   initModal();
-  initFilter();
+  initCatalog();
   FAQModule.init();
 });
 

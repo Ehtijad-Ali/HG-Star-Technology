@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
 <header class="site-header" role="banner">
   <div class="container header-inner">
     <a href="index.html" class="header-logo" aria-label="HG Star Technology Home">
-      <img id="brand-logo-img" src="img/logo/black.webp" alt="HG Star Technology" class="brand-logo" width="180" height="44" fetchpriority="high" decoding="async">
+      <img id="brand-logo-img" src="img/logo/HGTECHlogo.svg" alt="HG Star Technology" class="brand-logo" width="180" height="44" fetchpriority="high" decoding="async">
     </a>
     <nav class="main-nav" role="navigation" aria-label="Main navigation">
       <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
@@ -109,18 +109,88 @@
 
 <main id="main-content">
 
-<section class="page-header">
-  <div class="container">
-    <div class="section-label" data-i18n="products.category" style="color:var(--red);margin-bottom:12px">Product Category</div>
-    <h1 data-i18n="products.cleaning.title">Laser Cleaning Systems</h1>
-    <p data-i18n="products.cleaning.description">Industrial laser cleaning machines for rust removal, paint stripping, oxide layer removal and surface preparation. CW and pulsed options available.</p>
+<section class="hero page-hero" aria-label="Laser Cleaning Systems">
+  <div class="hero-bg" style="background-image:url('img/categories/laser-cleaning.webp')"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container hero-content">
+    <div class="hero-grid hero-grid--left">
+      <div class="animate-fade-up">
+        <div class="hero-label" data-i18n="products.category">Product Category</div>
+        <h1 data-i18n="products.cleaning.title">Laser Cleaning Systems</h1>
+        <p class="hero-desc" data-i18n="products.cleaning.description">Industrial laser cleaning machines for rust removal, paint stripping, oxide layer removal and surface preparation. CW and pulsed options available.</p>
+        <div class="hero-actions hero-actions-row">
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="header.requestQuote">Request Quote</a>
+          <a href="#productsContainer" class="btn btn-ghost btn-lg">Browse Models ↓</a>
+        </div>
+        <div class="hero-stats-row">
+          <div class="hero-stat">
+            <div class="hero-stat-value">100–3000 W</div>
+            <div class="hero-stat-label">Power Range</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">No Chemicals</div>
+            <div class="hero-stat-label">Eco Process</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">CW + Pulsed</div>
+            <div class="hero-stat-label">Laser Modes</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+<!-- Key Features Strip -->
+<div class="page-features">
+  <div class="container">
+    <div class="page-features-grid">
+      <div class="page-feature-item">
+        <div class="page-feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+        </div>
+        <div class="page-feature-text">
+          <h4>Chemical-Free Cleaning</h4>
+          <p>Zero solvents, zero secondary waste</p>
+        </div>
+      </div>
+      <div class="page-feature-item">
+        <div class="page-feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="page-feature-text">
+          <h4>CW &amp; Pulsed Modes</h4>
+          <p>Precise or aggressive — both covered</p>
+        </div>
+      </div>
+      <div class="page-feature-item">
+        <div class="page-feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="page-feature-text">
+          <h4>Portable Handheld</h4>
+          <p>Compact units for on-site &amp; field work</p>
+        </div>
+      </div>
+      <div class="page-feature-item">
+        <div class="page-feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div class="page-feature-text">
+          <h4>Substrate-Safe</h4>
+          <p>Removes surface only, no base damage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="filter-bar">
   <div class="container filter-inner">
     <div class="filter-chips">
-      <button class="filter-chip active" data-category="all" type="button" data-i18n="filters.allCleaning">All Laser Cleaning</button>
+      <button class="filter-chip active" data-series="all" type="button" data-i18n="filters.allCleaning">All Models</button>
+      <button class="filter-chip" data-series="CW Cleaning" type="button">CW Cleaning</button>
+      <button class="filter-chip" data-series="Pulse Cleaning" type="button">Pulse Cleaning</button>
     </div>
     <div class="filter-search">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -136,20 +206,50 @@
   </div>
 </section>
 
-<section class="section section-alt" style="padding-top:40px">
+<!-- Service & Warranty -->
+<section class="info-grid-section">
   <div class="container">
-    <div style="padding:32px;background:var(--bg-card);border:1px solid var(--border-light);border-radius:var(--radius-md)">
-      <h3 style="font-family:var(--font-body);font-size:1.125rem;font-weight:700;margin-bottom:16px" data-i18n="warranty_sections.title">Warranty & Service Information</h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
-        <div>
-          <h4 style="font-size:0.875rem;font-weight:600;color:var(--red);margin-bottom:8px" data-i18n="warranty_sections.standard_warranty">2-Year Standard Warranty</h4>
-          <p style="font-size:0.8125rem;color:var(--text-tertiary);line-height:1.7" data-i18n="warranty_sections.standard_desc">Complete machine warranty covering all mechanical and electrical components. Laser source: 2 years for 1.5KW–6KW, 3 years for 12KW–30KW. Warranty starts from date of qualified acceptance at your facility.</p>
+    <div class="info-grid-header">
+      <div class="section-label" data-i18n="warranty_sections.label">Service &amp; Support</div>
+      <h2 class="info-grid-header-title" data-i18n="warranty_sections.title">Warranty &amp; Delivery</h2>
+    </div>
+    <div class="info-grid">
+      <div class="info-grid-item">
+        <div class="info-grid-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div>
-          <h4 style="font-size:0.875rem;font-weight:600;color:var(--red);margin-bottom:8px" data-i18n="warranty_sections.payment_terms">Payment Terms</h4>
-          <p style="font-size:0.8125rem;color:var(--text-tertiary);line-height:1.7" data-i18n="warranty_sections.payment_desc">20% T/T for order confirmation, 80% T/T before shipment. Other payment arrangements available for qualified buyers. FOB Qingdao port standard terms.</p>
+        <h4 data-i18n="warranty_sections.standard_warranty">2-Year Standard Warranty</h4>
+        <p data-i18n="warranty_sections.standard_desc">Complete machine warranty covering all mechanical and electrical components. Laser source: 2 years for 1.5KW–6KW, 3 years for 12KW–30KW. Warranty starts from date of qualified acceptance at your facility.</p>
+      </div>
+      <div class="info-grid-item">
+        <div class="info-grid-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
         </div>
-        <div><h4 style="font-size:0.875rem;font-weight:600;color:var(--red);margin-bottom:8px" data-i18n="warranty_sections.eco_cleaning">Eco-Friendly Cleaning</h4><p style="font-size:0.8125rem;color:var(--text-tertiary);line-height:1.7" data-i18n="warranty_sections.eco_desc">No chemicals, no media, no secondary waste. Safe and environmentally friendly surface treatment for metals and other materials.</p></div>
+        <h4 data-i18n="warranty_sections.eco_cleaning">Eco-Friendly Process</h4>
+        <p data-i18n="warranty_sections.eco_desc">No chemicals, no media, no secondary waste. Safe and environmentally friendly surface treatment for metals and other materials.</p>
+      </div>
+      <div class="info-grid-item">
+        <div class="info-grid-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h4 data-i18n="warranty_sections.payment_terms">Payment Terms</h4>
+        <p data-i18n="warranty_sections.payment_desc">20% T/T for order confirmation, 80% T/T before shipment. Other payment arrangements available for qualified buyers. FOB Qingdao port standard terms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Page CTA -->
+<section class="page-cta-section">
+  <div class="container">
+    <div class="page-cta-inner">
+      <div>
+        <h2 class="page-cta-title">Clean Smarter, Not Harder.</h2>
+        <p class="page-cta-desc">Eliminate chemicals and abrasives from your process. Our team will recommend the right cleaning power and scan head for your application.</p>
+      </div>
+      <div class="page-cta-actions">
+        <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        <a href="about.html#service" class="btn btn-ghost">Service &amp; Support</a>
       </div>
     </div>
   </div>
@@ -162,7 +262,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="footer-logo-link" aria-label="HG Star Technology Home">
-          <img class="footer-brand-logo-theme footer-brand-logo" src="img/logo/black.webp" alt="HG Star Technology" width="180" height="44" loading="lazy" decoding="async">
+          <img class="footer-brand-logo-theme footer-brand-logo" src="img/logo/HGTECHlogo.svg" alt="HG Star Technology" width="180" height="44" loading="lazy" decoding="async">
         </a>
         <p class="footer-member" data-i18n="footer.tagline">Member of HGTECH · Founded over 50 years ago, a pioneer in industrial laser applications in China</p>
         <div style="margin-top: 16px; margin-bottom: 16px;">
@@ -199,11 +299,11 @@
         <ul class="footer-contact">
           <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 16px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span><a href="mailto:info@hg-star.com" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.email">info@hg-star.com</a></span>
+            <span><a href="mailto:support@auto-dress.de" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.email">support@auto-dress.de</a></span>
           </li>
           <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 16px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span><a href="tel:+8653168657218" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.phone">+86 531 68657218</a></span>
+            <span><a href="tel:+49228522640 77" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.phone">0228 522 640 77</a></span>
           </li>
           <li style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 12px;" data-i18n="footer.businessHours">Mon–Fri · 08:00–18:00 CST</li>
         </ul>

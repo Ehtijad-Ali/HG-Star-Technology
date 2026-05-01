@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="HG Star Technology | Industrial Fiber Laser Machines">
 <meta name="twitter:image" content="https://www.hgstar.com/img/hero/factory.webp">
 <meta name="twitter:description" content="Industrial laser cutting, tube cutting, welding, cleaning and marking machines. Request a quote or technical consultation.">
-<link rel="preload" as="image" href="img/logo/black.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/logo/HGTECHlogo.svg" fetchpriority="high">
 <link rel="preload" as="image" href="img/categories/plate-cutting.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
       "@type": "Organization",
       "name": "HG Star Technology",
       "url": "https://www.hgstar.com/",
-      "logo": "https://www.hgstar.com/img/logo/black.webp",
+      "logo": "https://www.hgstar.com/img/logo/HGTECHlogo.svg",
       "sameAs": [
         "https://www.hg-star.com",
         "https://www.hglaserglobal.com"
@@ -39,7 +39,7 @@
         "@type": "ContactPoint",
         "contactType": "sales",
         "telephone": "+86-531-68657218",
-        "email": "info@hg-star.com",
+        "email": "support@auto-dress.de",
         "areaServed": "Worldwide"
       }
     },
@@ -55,11 +55,37 @@
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader" aria-hidden="true">
+  <div class="loader-container">
+    <div class="loader-core">
+      <div class="loader-ring loader-ring-1"></div>
+      <div class="loader-ring loader-ring-2"></div>
+      <div class="loader-ring loader-ring-3"></div>
+      <div class="loader-center">
+        <svg class="loader-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2v10m5-5h-10m15 7c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12"/>
+        </svg>
+      </div>
+    </div>
+    <div class="loader-particles">
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+    </div>
+  </div>
+</div>
+
+<div id="page-content" style="opacity: 0; transition: opacity 0.5s ease-out;">
+
 <!-- Header -->
 <header class="site-header" role="banner">
   <div class="container header-inner">
     <a href="index.html" class="header-logo" aria-label="HG Star Technology Home">
-      <img id="brand-logo-img" src="img/logo/black.webp" alt="HG Star Technology" class="brand-logo" width="180" height="44" fetchpriority="high" decoding="async">
+      <img id="brand-logo-img" src="img/logo/HGTECHlogo.svg" alt="HG Star Technology" class="brand-logo" width="180" height="44" fetchpriority="high" decoding="async">
     </a>
     <nav class="main-nav" role="navigation" aria-label="Main navigation">
       <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
@@ -141,43 +167,6 @@
 </div>
 
 <main id="main-content">
-
-<!-- Premium Product Slider Section -->
-<section class="premium-slider-section" aria-label="Premium product spotlight">
-  <div class="premium-slider-head">
-    <p class="premium-slider-label" data-i18n="premiumSlider.label">Featured Category</p>
-    <h2 class="premium-slider-category" id="premiumSliderCategory">Plate Cutting</h2>
-  </div>
-  <div class="premium-slider-shell">
-    <button class="premium-slider-arrow left" id="premiumSliderPrev" type="button" aria-label="Show previous product">
-      <span aria-hidden="true">&#10094;</span>
-    </button>
-    <div class="premium-slider-content">
-      <div class="premium-banner" id="premiumBanner">
-        <a class="premium-media" id="premiumCenterLink" href="plate-cutting.html" aria-label="Open featured product category">
-        </a>
-        <aside class="premium-info">
-          <p class="premium-right-top" id="premiumRightTop">BEST CONFIGURATION</p>
-          <h3 id="premiumInfoTitle">Production Capacity</h3>
-          <p class="premium-right-metric" id="premiumRightMetric">UP TO 30kW</p>
-          <p id="premiumInfoText">High-throughput cutting platforms designed for continuous industrial output and stable day-shift performance.</p>
-          <p class="premium-right-badge" id="premiumRightBadge">PREMIUM INDUSTRIAL GRADE</p>
-        </aside>
-      </div>
-      <div class="premium-slider-dots" id="premiumSliderDots" aria-label="Slider pagination">
-        <button type="button" class="premium-dot is-active" data-premium-dot="0" aria-label="Slide 1"></button>
-        <button type="button" class="premium-dot" data-premium-dot="1" aria-label="Slide 2"></button>
-        <button type="button" class="premium-dot" data-premium-dot="2" aria-label="Slide 3"></button>
-        <button type="button" class="premium-dot" data-premium-dot="3" aria-label="Slide 4"></button>
-        <button type="button" class="premium-dot" data-premium-dot="4" aria-label="Slide 5"></button>
-        <button type="button" class="premium-dot" data-premium-dot="5" aria-label="Slide 6"></button>
-      </div>
-    </div>
-    <button class="premium-slider-arrow right" id="premiumSliderNext" type="button" aria-label="Show next product">
-      <span aria-hidden="true">&#10095;</span>
-    </button>
-  </div>
-</section>
 
 <!-- Hero Section -->
 <section class="hero" aria-label="Hero">
@@ -272,93 +261,150 @@
   </div>
 </div>
 
+<!-- Premium Product Slider Section -->
+<section class="premium-slider-section" aria-label="Premium product spotlight">
+  <div class="premium-slider-head">
+    <p class="premium-slider-label" data-i18n="premiumSlider.label">Featured Category</p>
+    <h2 class="premium-slider-category" id="premiumSliderCategory">Plate Cutting</h2>
+  </div>
+  <div class="premium-slider-shell">
+    <button class="premium-slider-arrow left" id="premiumSliderPrev" type="button" aria-label="Show previous product">
+      <span aria-hidden="true">&#10094;</span>
+    </button>
+    <div class="premium-slider-content">
+      <div class="premium-banner" id="premiumBanner">
+        <a class="premium-media" id="premiumCenterLink" href="plate-cutting.html" aria-label="Open featured product category">
+        </a>
+        <aside class="premium-info">
+          <p class="premium-right-top" id="premiumRightTop">BEST CONFIGURATION</p>
+          <h3 id="premiumInfoTitle">Production Capacity</h3>
+          <p class="premium-right-metric" id="premiumRightMetric">UP TO 30kW</p>
+          <p id="premiumInfoText">High-throughput cutting platforms designed for continuous industrial output and stable day-shift performance.</p>
+          <p class="premium-right-badge" id="premiumRightBadge">PREMIUM INDUSTRIAL GRADE</p>
+        </aside>
+      </div>
+      <div class="premium-slider-dots" id="premiumSliderDots" aria-label="Slider pagination">
+        <button type="button" class="premium-dot is-active" data-premium-dot="0" aria-label="Slide 1"></button>
+        <button type="button" class="premium-dot" data-premium-dot="1" aria-label="Slide 2"></button>
+        <button type="button" class="premium-dot" data-premium-dot="2" aria-label="Slide 3"></button>
+        <button type="button" class="premium-dot" data-premium-dot="3" aria-label="Slide 4"></button>
+        <button type="button" class="premium-dot" data-premium-dot="4" aria-label="Slide 5"></button>
+        <button type="button" class="premium-dot" data-premium-dot="5" aria-label="Slide 6"></button>
+      </div>
+    </div>
+    <button class="premium-slider-arrow right" id="premiumSliderNext" type="button" aria-label="Show next product">
+      <span aria-hidden="true">&#10095;</span>
+    </button>
+  </div>
+</section>
+
 <!-- Categories Section -->
 <section class="section" id="categories" aria-labelledby="cat-heading">
   <div class="container">
-    <div class="section-header text-center reveal">
+
+    <div class="section-header text-center reveal" style="margin-bottom:56px">
       <div class="section-label" data-i18n="categories.label">Product Categories</div>
-      <h2 class="section-title" data-i18n="categories.title">Browse Our Machine Range</h2>
-      <p class="section-desc" data-i18n="categories.description" style="margin:0 auto">Complete industrial laser solutions from entry-level systems to high-power production machines. All configurations include installation support and operator training.</p>
+      <h2 class="section-title" id="cat-heading" data-i18n="categories.title">Browse Our Machine Range</h2>
     </div>
+
     <div class="category-grid">
+
       <a href="plate-cutting.html" class="category-card reveal">
         <div class="category-card-img">
           <img src="img/categories/plate-cutting.webp" alt="Fiber laser plate cutting machines" loading="lazy">
+          <span class="cat-tag" aria-hidden="true">Plate Cutting</span>
+          <span class="cat-spec" aria-hidden="true">1.5 – 30 kW</span>
         </div>
         <div class="category-card-body">
           <h3 class="category-card-title" data-i18n="categories.plateCutting.title">Plate Cutting</h3>
           <p class="category-card-desc" data-i18n="categories.plateCutting.description">Sheet metal laser cutting systems from 1.5kW to 30kW. Work areas from 3x1.5m to 8x2.5m with optional exchange tables.</p>
           <div class="category-card-meta">
             <span class="category-card-count" data-i18n="categories.plateCutting.models">15 Models</span>
-            <span class="category-card-link" data-i18n="categories.plateCutting.link">View Range →</span>
+            <span class="category-card-link"><span data-i18n="categories.plateCutting.link">View Range</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </div>
         </div>
       </a>
+
       <a href="tube-cutting.html" class="category-card reveal animate-delay-1">
         <div class="category-card-img">
           <img src="img/categories/tube-cutting.webp" alt="CNC laser tube cutting machines" loading="lazy">
+          <span class="cat-tag" aria-hidden="true">Tube Cutting</span>
+          <span class="cat-spec" aria-hidden="true">Ø up to 500 mm</span>
         </div>
         <div class="category-card-body">
           <h3 class="category-card-title" data-i18n="categories.tubeCutting.title">Pipe cutting</h3>
           <p class="category-card-desc" data-i18n="categories.tubeCutting.description">Double-deck clamping systems for damage-free holding. Automatic loading and unloading. Round tubes, square tubes, rectangular tubes and oval tubes – diameters up to Ø 500 mm.</p>
           <div class="category-card-meta">
             <span class="category-card-count" data-i18n="categories.tubeCutting.models">7 Models</span>
-            <span class="category-card-link" data-i18n="categories.tubeCutting.link">View Range →</span>
+            <span class="category-card-link"><span data-i18n="categories.tubeCutting.link">View Range</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </div>
         </div>
       </a>
+
       <a href="combined-machines.html" class="category-card reveal animate-delay-2">
         <div class="category-card-img">
           <img src="img/categories/combined-machines.webp" alt="Combined plate and tube laser cutting machines" loading="lazy">
+          <span class="cat-tag" aria-hidden="true">Combination</span>
+          <span class="cat-spec" aria-hidden="true">Plate + Tube</span>
         </div>
         <div class="category-card-body">
           <h3 class="category-card-title" data-i18n="categories.combination.title">Combination</h3>
           <p class="category-card-desc" data-i18n="categories.combination.description">One machine for two tasks – an economical solution for companies with variable requirements. Sheet cutting and pipe cutting without changeover.</p>
           <div class="category-card-meta">
             <span class="category-card-count" data-i18n="categories.combination.models">5 Models</span>
-            <span class="category-card-link" data-i18n="categories.combination.link">View Range →</span>
+            <span class="category-card-link"><span data-i18n="categories.combination.link">View Range</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </div>
         </div>
       </a>
+
       <a href="laser-welding.html" class="category-card reveal">
         <div class="category-card-img">
           <img src="img/categories/laser-welding.webp" alt="Handheld laser welding systems" loading="lazy">
+          <span class="cat-tag" aria-hidden="true">Welding</span>
+          <span class="cat-spec" aria-hidden="true">1 – 3 kW</span>
         </div>
         <div class="category-card-body">
           <h3 class="category-card-title" data-i18n="categories.welding.title">Welding</h3>
           <p class="category-card-desc" data-i18n="categories.welding.description">Wobble welding heads for wider weld geometries. Multiple weld modes, intuitive operation, and coaxial shielding gas supply. Suitable for steel, stainless steel, and aluminum.</p>
           <div class="category-card-meta">
             <span class="category-card-count" data-i18n="categories.welding.models">5 Models</span>
-            <span class="category-card-link" data-i18n="categories.welding.link">View Range →</span>
+            <span class="category-card-link"><span data-i18n="categories.welding.link">View Range</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </div>
         </div>
       </a>
+
       <a href="laser-cleaning.html" class="category-card reveal animate-delay-1">
         <div class="category-card-img">
           <img src="img/categories/laser-cleaning.webp" alt="Laser cleaning and surface preparation machines" loading="lazy">
+          <span class="cat-tag" aria-hidden="true">Cleaning</span>
+          <span class="cat-spec" aria-hidden="true">6 Scan Modes</span>
         </div>
         <div class="category-card-body">
           <h3 class="category-card-title" data-i18n="categories.cleaning.title">Cleaning</h3>
           <p class="category-card-desc" data-i18n="categories.cleaning.description">6 scan modes. Low maintenance. Applications: Rust removal, oil removal, coating removal, weld cleaning, local hardening, surface roughening.</p>
           <div class="category-card-meta">
             <span class="category-card-count" data-i18n="categories.cleaning.models">4 Models</span>
-            <span class="category-card-link" data-i18n="categories.cleaning.link">View Range →</span>
+            <span class="category-card-link"><span data-i18n="categories.cleaning.link">View Range</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </div>
         </div>
       </a>
+
       <a href="laser-marking.html" class="category-card reveal animate-delay-2">
         <div class="category-card-img">
           <img src="img/categories/laser-marking.webp" alt="Fiber laser marking and engraving machines" loading="lazy">
+          <span class="cat-tag" aria-hidden="true">Marking</span>
+          <span class="cat-spec" aria-hidden="true">Fiber / CO₂ / UV</span>
         </div>
         <div class="category-card-body">
           <h3 class="category-card-title" data-i18n="categories.marking.title">Marking</h3>
           <p class="category-card-desc" data-i18n="categories.marking.description">Fiber, CO₂, and UV wavelengths for universal marking applications. Compact design, easy operation, low maintenance. EZCAD software included.</p>
           <div class="category-card-meta">
             <span class="category-card-count" data-i18n="categories.marking.models">4 Models</span>
-            <span class="category-card-link" data-i18n="categories.marking.link">View Range →</span>
+            <span class="category-card-link"><span data-i18n="categories.marking.link">View Range</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
           </div>
         </div>
       </a>
+
     </div>
   </div>
 </section>
@@ -602,6 +648,74 @@
   </div>
 </section>
 
+<!-- Client Testimonials -->
+<section class="testimonials-section" aria-labelledby="testimonials-heading">
+  <div class="testimonials-bg-glow"></div>
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <div class="section-label">Client Feedback</div>
+      <h2 class="section-title" id="testimonials-heading">What Our Clients Say</h2>
+      <p class="section-desc" style="margin:0 auto">Representative feedback from manufacturers across Europe, North America and the Middle East. Full references available under NDA on request.</p>
+    </div>
+    <div class="testimonials-grid reveal">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"We installed two SMART3015PRO lines for our subcontract sheet metal operation. The exchange table setup means near-zero downtime between jobs. HG Star's installation team was professional and the remote support since commissioning has been excellent."</p>
+        <div class="testimonial-author">
+          <div class="author-initials">M</div>
+          <div class="author-info">
+            <div class="author-name">Michael S.</div>
+            <div class="author-role">Operations Director · Sheet Metal Job Shop, Germany</div>
+          </div>
+          <div class="author-flag">🇩🇪</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"The SMART-TP6030 tube cutting cell replaced three manual processes in our chassis production line. Cycle times dropped by 40%. Pricing direct from the factory was a significant advantage — no distributor markup, and delivery hit the promised window."</p>
+        <div class="testimonial-author">
+          <div class="author-initials">J</div>
+          <div class="author-info">
+            <div class="author-name">James R.</div>
+            <div class="author-role">Production Manager · OEM Component Manufacturer, USA</div>
+          </div>
+          <div class="author-flag">🇺🇸</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"We run 30 kW plate cutting on structural profiles up to 25 mm. The SMART8025PRO handles the load without issue. On-site commissioning took four days and training was thorough. Spare parts reached us within 48 hours after a minor component swap."</p>
+        <div class="testimonial-author">
+          <div class="author-initials">A</div>
+          <div class="author-info">
+            <div class="author-name">Ahmed K.</div>
+            <div class="author-role">General Manager · Structural Steel Contractor, UAE</div>
+          </div>
+          <div class="author-flag">🇦🇪</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA Section -->
 <section class="section cta-section" aria-label="Call to action">
   <div class="container">
@@ -624,7 +738,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="footer-logo-link" aria-label="HG Star Technology Home">
-          <img id="footer-logo-img" class="footer-brand-logo-theme footer-brand-logo" src="img/logo/black.webp" alt="HG Star Technology" width="180" height="44" loading="lazy" decoding="async">
+          <img id="footer-logo-img" class="footer-brand-logo-theme footer-brand-logo" src="img/logo/HGTECHlogo.svg" alt="HG Star Technology" width="180" height="44" loading="lazy" decoding="async">
         </a>
         <p class="footer-member" data-i18n="footer.tagline">Member of HGTECH · Founded over 50 years ago, a pioneer in industrial laser applications in China</p>
         <div style="margin-top: 16px; margin-bottom: 16px;">
@@ -661,11 +775,11 @@
         <ul class="footer-contact">
           <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 16px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="flex-shrink: 0; margin-top: 2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span><a href="mailto:info@hg-star.com" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.email">info@hg-star.com</a></span>
+            <span><a href="mailto:support@auto-dress.de" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.email">support@auto-dress.de</a></span>
           </li>
           <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 16px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span><a href="tel:+8653168657218" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.phone">+86 531 68657218</a></span>
+            <span><a href="tel:+49228522640 77" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.phone">0228 522 640 77</a></span>
           </li>
           <li style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 12px;" data-i18n="footer.businessHours">Mon–Fri · 08:00–18:00 CST</li>
         </ul>
@@ -702,6 +816,8 @@
 <script src="js/i18n.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/main.js"></script>
+<script src="js/loader.js"></script>
 <script>initTheme();</script>
+</div>
 </body>
 </html>
