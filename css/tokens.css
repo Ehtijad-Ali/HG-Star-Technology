@@ -1,12 +1,7 @@
 /* Design tokens: light defaults + dark overrides */
 
 /* Custom font import */
-@font-face {
-  font-family: 'Nasalization';
-  src: url('../fonts/Nasalization-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* Barlow fonts loaded via Google Fonts in HTML */
 
 :root {
   /* Brand scale (red) */
@@ -98,8 +93,8 @@
   --shadow-cyan: 0 12px 40px rgba(30,155,215,0.2);
   --shadow-magenta: 0 12px 40px rgba(229,11,125,0.2);
   --shadow-hover: 0 16px 50px rgba(0,0,0,0.18);
-  --font-display: 'Nasalization', 'Arial Narrow', Impact, sans-serif;
-  --font-body: 'Nasalization', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', 'Barlow', Arial, sans-serif;
+  --font-body: 'Barlow', 'Segoe UI', system-ui, sans-serif;
   --header-height: 72px;
   --container-max: 1280px;
   --section-pad-y: 80px;
