@@ -37,7 +37,7 @@
     },
     "hero": {
       "label": "Industrial Machinery Catalog · Factory Direct · Quote-Based Sales",
-      "headline": "Industrial Fiber Laser Systems For Cutting, Tube Processing, Welding & Cleaning",
+      "headline": "<span class=\"text-red\">Industrial Fiber Laser</span> Systems For <span class=\"text-red\">Cutting, Tube Processing,</span> <span>Welding &amp; Cleaning</span>",
       "description": "Factory-direct solutions for sheet metal fabricators, OEMs and industrial manufacturers. Technical consultation, worldwide shipping, installation, training and after-sales support. <strong>Warranty:</strong> 2-year standard on the complete machine; laser source covered up to 3 years on selected high-power models (12–30 kW), from qualified acceptance at your facility.",
       "cta1": "Request a Quote",
       "cta2": "Browse Machines",
@@ -628,7 +628,7 @@
     },
     "hero": {
       "label": "Industriemaschinenkatalog · Direkt ab Fabrik · Angebotsbasierter Verkauf",
-      "headline": "Industrielle Faserlaser für Blech, Rohr, Schweißen & Reinigung",
+      "headline": "<span class=\"text-red\">Industrielle Faserlaser</span> für Blech, Rohr, <span class=\"text-red\">Schweißen</span> &amp; <span>Reinigung</span>",
       "description": "Direkt ab Fabrik für Blechbearbeiter, OEMs und industrielle Fertiger. Technische Beratung, weltweiter Versand, Installation, Schulung und After-Sales-Support. <strong>Garantie:</strong> 2 Jahre Standard auf die komplette Maschine; Laserquelle bis zu 3 Jahre bei ausgewählten Hochleistungsmodellen (12–30 kW), ab qualifizierter Abnahme bei Ihnen.",
       "cta1": "Angebot anfordern",
       "cta2": "Maschinen ansehen",
