@@ -351,7 +351,20 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "How we collect, use and protect your personal information."
+      "description": "How we collect, use and protect your personal information.",
+      "sec1Title": "1. Information We Collect",
+      "sec1Text": "We collect information you provide directly to us, such as when you fill out our quote request form. This may include your name, email address, phone number, company name, country and project details.",
+      "sec2Title": "2. How We Use Your Information",
+      "sec2Text": "We use your information to respond to your inquiries, provide quotes, process orders and communicate about our products and services. We do not sell or rent your personal data to third parties.",
+      "sec3Title": "3. Data Security",
+      "sec3Text": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure or destruction.",
+      "sec4Title": "4. Your Rights",
+      "sec4Text": "You have the right to access, correct or delete your personal data. To exercise these rights, please contact us at <a href=\"mailto:sales@hgstar.com\" style=\"color:var(--red)\">sales@hgstar.com</a>.",
+      "sec5Title": "5. Cookies",
+      "sec5Text": "Our website uses cookies to improve your browsing experience and analyze site traffic. You can control cookies through your browser settings.",
+      "sec6Title": "6. Contact",
+      "sec6Text": "If you have questions about this privacy policy, please contact us at <a href=\"mailto:sales@hgstar.com\" style=\"color:var(--red)\">sales@hgstar.com</a>.",
+      "lastUpdated": "Last updated: January 2025"
     },
     "modal": {
       "dealerPrice": "Dealer Price (FOB)",
@@ -432,6 +445,7 @@
       "ref3Desc": "High-power cutting for heavy plate and long profiles."
     },
     "warranty_sections": {
+      "label": "Service & Support",
       "title": "Warranty & Service Information",
       "standard_warranty": "2-Year Standard Warranty",
       "standard_desc": "2-year standard warranty on the complete machine covering mechanical and electrical components. Laser source: 2 years for 1.5–6 kW, up to 3 years for 12–30 kW. Coverage starts from qualified acceptance at your facility. Consumables excluded.",
@@ -942,7 +956,20 @@
     },
     "privacy": {
       "title": "Datenschutzerklärung",
-      "description": "Wie wir Ihre persönlichen Daten erfassen, verwenden und schützen."
+      "description": "Wie wir Ihre persönlichen Daten erfassen, verwenden und schützen.",
+      "sec1Title": "1. Welche Daten wir erfassen",
+      "sec1Text": "Wir erfassen Informationen, die Sie uns direkt bereitstellen, zum Beispiel beim Ausfüllen unseres Anfrageformulars. Dazu können Name, E-Mail-Adresse, Telefonnummer, Firmenname, Land und Projektdetails gehören.",
+      "sec2Title": "2. Wie wir Ihre Daten verwenden",
+      "sec2Text": "Wir verwenden Ihre Daten, um auf Anfragen zu antworten, Angebote zu erstellen, Bestellungen zu bearbeiten und über unsere Produkte und Dienstleistungen zu informieren. Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht an Dritte.",
+      "sec3Title": "3. Datensicherheit",
+      "sec3Text": "Wir setzen geeignete technische und organisatorische Maßnahmen ein, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen.",
+      "sec4Title": "4. Ihre Rechte",
+      "sec4Text": "Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer personenbezogenen Daten. Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter <a href=\"mailto:sales@hgstar.com\" style=\"color:var(--red)\">sales@hgstar.com</a>.",
+      "sec5Title": "5. Cookies",
+      "sec5Text": "Unsere Website verwendet Cookies, um Ihre Nutzung zu verbessern und den Website-Traffic zu analysieren. Sie können Cookies über Ihre Browsereinstellungen steuern.",
+      "sec6Title": "6. Kontakt",
+      "sec6Text": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter <a href=\"mailto:sales@hgstar.com\" style=\"color:var(--red)\">sales@hgstar.com</a>.",
+      "lastUpdated": "Zuletzt aktualisiert: Januar 2025"
     },
     "modal": {
       "dealerPrice": "Händlerpreis (FOB)",
@@ -1023,6 +1050,7 @@
       "ref3Desc": "Hochleistungsschneiden für Dickblech und lange Profile."
     },
     "warranty_sections": {
+      "label": "Service & Support",
       "title": "Garantie & Serviceinformationen",
       "standard_warranty": "2-Jahres-Standardgarantie",
       "standard_desc": "2 Jahre Standardgarantie auf die komplette Maschine für mechanische und elektrische Komponenten. Laserquelle: 2 Jahre bei 1,5–6 kW, bis zu 3 Jahre bei 12–30 kW. Beginn mit qualifizierter Abnahme in Ihrem Betrieb. Verbrauchsmaterialien ausgeschlossen.",
