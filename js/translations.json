@@ -226,6 +226,7 @@
       "page_label": "About Us",
       "page_title": "HG Star Technology",
       "page_description": "Industrial laser systems manufacturer with 15+ years of experience serving manufacturers worldwide. Quality machines, professional support, lasting partnerships.",
+      "hero_label": "Our Story",
       "hero_title": "Committed to Manufacturing Excellence",
       "hero_para1": "HG Star Technology has been designing and manufacturing industrial laser equipment since 2010. From our headquarters in Jinan, China — the world's laser equipment capital — we produce a complete range of fiber laser cutting, welding, cleaning and marking systems.",
       "hero_para2": "Our SMART series machines are engineered for reliability, precision and long-term productivity. We serve clients in over 60 countries across Europe, North America, Asia, Africa and South America, providing not just machines but complete manufacturing solutions including installation, training and after-sales support.",
@@ -522,6 +523,8 @@
     "faq": {
       "label": "Frequently Asked Questions",
       "title": "What Buyers Want to Know",
+      "description": "Answers to the most common questions about our machines, delivery, certification and after-sales service.",
+      "count": "6 questions answered",
       "question1": "What payment terms apply?",
       "answer1": "Standard: 20% deposit upon order confirmation, 80% before shipment (T/T). For larger projects or regular orders, customized terms are available – contact us directly.",
       "question2": "What is the delivery time?",
@@ -831,6 +834,7 @@
       "page_label": "Über uns",
       "page_title": "HG Star Technologie",
       "page_description": "Hersteller von Industrielasersystemen mit 15+ Jahren Erfahrung bei der Bedienung von Herstellern weltweit. Hochwertige Maschinen, professionelle Unterstützung, dauerhafte Partnerschaften.",
+      "hero_label": "Unsere Geschichte",
       "hero_title": "Engagement für Fertigungsexzellenz",
       "hero_para1": "HG Star Technology entwirft und stellt Industrielaseranlagen seit 2010 her. Von unserem Hauptsitz in Jinan, China – der Lasertechnik-Hauptstadt der Welt – stellen wir eine komplette Palette von Faserlaserschneid-, Schweiß-, Reinigungs- und Markierungssystemen her.",
       "hero_para2": "Unsere SMART-Serie-Maschinen sind für Zuverlässigkeit, Präzision und langfristige Produktivität ausgelegt. Wir bedienen Kunden in über 60 Ländern in Europa, Nord- und Südamerika, Asien, Afrika und weltweit und bieten nicht nur Maschinen, sondern umfassende Fertigungslösungen einschließlich Installation, Schulung und After-Sales-Support.",
@@ -1127,6 +1131,8 @@
     "faq": {
       "label": "Häufige Fragen",
       "title": "Was Käufer wissen möchten",
+      "description": "Antworten auf die häufigsten Fragen zu unseren Maschinen, Lieferung, Zertifizierung und Service.",
+      "count": "6 Fragen beantwortet",
       "question1": "Welche Zahlungsbedingungen gelten?",
       "answer1": "Standard: 20 % Anzahlung bei Auftragserteilung, 80 % vor Versand (T/T). Bei größeren Projekten oder regelmäßigen Abnahmen sind individuelle Konditionen möglich – sprechen Sie uns direkt an.",
       "question2": "Wie lange ist die Lieferzeit?",
