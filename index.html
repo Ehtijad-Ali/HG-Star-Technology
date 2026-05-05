@@ -192,14 +192,15 @@
 
 <!-- Hero Section -->
 <section class="hero" aria-label="Hero">
-  <div class="hero-bg" style="background-image:url('img/hero/factory.webp')"></div>
+  <video class="hero-bg-video" autoplay muted loop playsinline>
+    <source src="videos/PlateCutting.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="container hero-content">
     <div class="hero-grid">
       <div class="animate-fade-up">
-        <div class="hero-label" data-i18n="hero.label">Industrial Machinery Catalog · Factory Direct · Quote-Based Sales</div>
-        <h1 data-i18n="hero.headline"><span class="text-red">Industrial Fiber Laser</span> Systems For <span class="text-red">Cutting, Tube Processing,</span> <span>Welding &amp; Cleaning</span></h1>
-        <p class="hero-desc" data-i18n="hero.description">Factory-direct solutions for sheet metal fabricators, OEMs and industrial manufacturers. Technical consultation, worldwide shipping, installation, training and after-sales support. <strong>Warranty:</strong> 2-year standard on the complete machine; laser source covered up to 3 years on selected high-power models (12–30 kW).</p>
+        <h1 style="color:var(--red)" data-i18n="hero.homeTitle">Industrielle Laser Maschinen</h1>
+        <p class="hero-desc" data-i18n="hero.description">Factory-direct solutions for sheet metal fabricators, OEMs and industrial manufacturers. Technical consultation, worldwide shipping, installation, training and after-sales support.</p>
         <div class="hero-actions hero-actions-row">
           <a href="#categories" class="btn btn-primary btn-lg" data-i18n="hero.cta2">Browse Machines</a>
           <a href="#resources" class="btn btn-ghost btn-lg" data-i18n="hero.cta3">Download Catalog</a>
@@ -432,7 +433,7 @@
 </section>
 
 <!-- Why Choose Section -->
-<section class="section section-alt" aria-labelledby="why-heading">
+<section class="section section-alt" aria-labelledby="why-heading" style="background: #ffffff;">
   <div class="container">
     <div class="section-header text-center reveal">
       <div class="section-label" data-i18n="whyChoose.label">Why HG Star</div>
@@ -473,7 +474,7 @@
 </section>
 
 <!-- Warranty & Service Section -->
-<section class="section" aria-labelledby="warranty-heading">
+<section class="section" aria-labelledby="warranty-heading" style="background: #ffffff;">
   <div class="container">
     <div class="section-header text-center reveal">
       <div class="section-label" data-i18n="warranty.label">Complete Lifecycle Support</div>
@@ -572,7 +573,7 @@
 </section>
 
 <!-- Applications -->
-<section class="section section-muted" id="applications" aria-labelledby="app-heading">
+<section class="section section-muted" id="applications" aria-labelledby="app-heading" style="background: #ffffff;">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label" data-i18n="homepage.applicationsLabel">Applications</div>
@@ -605,7 +606,7 @@
 </section>
 
 <!-- Service & export -->
-<section class="section" id="service-export" aria-labelledby="svc-heading">
+<section class="section" id="service-export" aria-labelledby="svc-heading" style="background: #ffffff;">
   <div class="container">
     <div class="section-header text-center reveal">
       <div class="section-label" data-i18n="homepage.serviceLabel">Service & export</div>
@@ -634,7 +635,7 @@
 </section>
 
 <!-- Resources -->
-<section class="section section-muted" id="resources" aria-labelledby="res-heading">
+<section class="section section-muted" id="resources" aria-labelledby="res-heading" style="background: #ffffff;">
   <div class="container">
     <div class="section-header text-center reveal">
       <div class="section-label" data-i18n="homepage.resourcesLabel">Resources</div>
@@ -840,6 +841,23 @@
 <script src="js/main.js"></script>
 <script src="js/loader.js"></script>
 <script>initTheme();</script>
+<script>
+(function(){
+  var vid = document.querySelector('.hero .hero-bg-video');
+  if(!vid) return;
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      requestAnimationFrame(function(){
+        var y = window.scrollY;
+        vid.style.transform = 'translateY(' + (y * 0.4) + 'px)';
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, {passive: true});
+})();
+</script>
 </div>
 </body>
 </html>
