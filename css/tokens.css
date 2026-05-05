@@ -61,12 +61,12 @@
   --amber-500: #f59e0b;
   --purple-500: #8b5cf6;
   --rose-500: #f43f5e;
-  --bg-primary: #fff4e3;
+  --bg-primary: #ffffff;
   --bg-secondary: #f5e8d0;
   --bg-tertiary: #fdf8ef;
   --bg-card: #fdf8ef;
-  --bg-header: rgba(255, 244, 227, 0.92);
-  --bg-header-solid: #fff4e3;
+  --bg-header: rgba(255, 255, 255, 0.92);
+  --bg-header-solid: #ffffff;
   --bg-dark: #0a0a0a;
   --bg-dark-card: #1a1a1a;
   --surface-1: var(--bg-primary);

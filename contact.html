@@ -112,14 +112,14 @@
   <div class="container">
     <div class="section-label" style="color:var(--red);margin-bottom:12px" data-i18n="contact.label">Contact Us</div>
     <h1 data-i18n="contact.title">Direct Contact with the Manufacturer</h1>
-    <p data-i18n="contact.description">You speak directly with the manufacturer � no intermediaries or distributors. Our German-speaking engineering team will create a customized offer based on your requirements.</p>
+    <p data-i18n="contact.description">You speak directly with the manufacturer &ndash; no intermediaries or distributors. Our German-speaking engineering team will create a customized offer based on your requirements.</p>
   </div>
 </section>
 
 <!-- Offer & Technical Advice Section -->
-<section class="section" style="background: rgba(224,26,26,0.02); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+<section class="section contact-offer-section" style="background: rgba(224,26,26,0.02); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
   <div class="container">
-    <div style="background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1.5px solid var(--border-light);">
+    <div class="contact-offer-panel" style="background: var(--bg-card); padding: 40px; border-radius: var(--radius-lg); border: 1.5px solid var(--border-light);">
       <h2 style="color: var(--brown-dark); margin-bottom: 20px; font-size: 1.5rem; font-weight: 800;" data-i18n="contact.offer_title">Offer & Technical Advice</h2>
       <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 24px; font-weight: 500;" data-i18n="contact.offer_description">
         Our German-speaking engineering team will create a customized offer based on your requirements, including configuration, warranty, training plan, and delivery schedule.
@@ -168,7 +168,7 @@
           </ul>
         </div>
       </div>
-      <p style="margin-top: 28px; padding: 16px; background: rgba(224,26,26,0.05); border-left: 3px solid var(--red); border-radius: var(--radius-sm); color: var(--text-secondary); font-weight: 500;" data-i18n="contact_page.response_time"><strong>Response time: 1�2 business days</strong></p>
+      <p class="contact-offer-response" style="margin-top: 28px; padding: 16px; background: rgba(224,26,26,0.05); border-left: 3px solid var(--red); border-radius: var(--radius-sm); color: var(--text-secondary); font-weight: 500;" data-i18n="contact_page.response_time"><strong>Response time: 1&ndash;2 business days</strong></p>
     </div>
   </div>
 </section>
@@ -206,7 +206,7 @@
           </div>
           <div>
             <h4 data-i18n="contact_page.phone_title">Phone</h4>
-            <p><a href="tel:+49228522640 77">0228 522 640 77</a><br><span style="font-size:0.875rem;color:var(--text-muted)" data-i18n="footer.businessHours">Mon�Fri � 09:00�17:00 CET</span></p>
+            <p><a href="tel:+49228522640 77">0228 522 640 77</a><br><span style="font-size:0.875rem;color:var(--text-muted)" data-i18n="footer.businessHours">Mon&ndash;Fri &middot; 09:00&ndash;17:00 CET</span></p>
           </div>
         </div>
 
@@ -226,7 +226,7 @@
           </div>
           <div>
             <h4 data-i18n="contact_page.support_hours">Support Hours</h4>
-            <p><strong data-i18n="footer.businessHours">Mon�Fri � 08:00�18:00 CST</strong><br><span style="font-size:0.875rem;color:var(--text-secondary)" data-i18n="contact_page.weekdays_only">(Weekdays only)</span></p>
+            <p><strong data-i18n="footer.businessHours">Mon&ndash;Fri &middot; 08:00&ndash;18:00 CST</strong><br><span style="font-size:0.875rem;color:var(--text-secondary)" data-i18n="contact_page.weekdays_only">(Weekdays only)</span></p>
           </div>
         </div>
 
@@ -236,7 +236,7 @@
           </div>
           <div>
             <h4 data-i18n="contact_page.payment_title">Payment Terms</h4>
-            <p><strong data-i18n="contact_page.standard_terms">Standard: 20% deposit � 80% before shipment (T/T)</strong><br><span style="font-size:0.875rem;color:var(--text-secondary)" data-i18n="contact_page.other_terms">Other terms available upon request</span></p>
+            <p><strong data-i18n="contact_page.standard_terms">Standard: 20% deposit &ndash; 80% before shipment (T/T)</strong><br><span style="font-size:0.875rem;color:var(--text-secondary)" data-i18n="contact_page.other_terms">Other terms available upon request</span></p>
           </div>
         </div>
 
@@ -252,7 +252,7 @@
       </div>
 
       <div>
-        <p class="form-intro" data-i18n="contact_page.form_intro">We typically respond within 1�2 business days.</p>
+        <p class="form-intro" data-i18n="contact_page.form_intro">We typically respond within 1&ndash;2 business days.</p>
         <div id="formStatus" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
         <form action="#" method="POST" novalidate id="quoteForm">
           <div class="hp-field" aria-hidden="true">
@@ -284,12 +284,12 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="phone" data-i18n="contact_page.form_phone">Phone</label>
-              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+49 211 �" autocomplete="tel">
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+49 211 &ndash;" autocomplete="tel">
             </div>
             <div class="form-group">
               <label class="form-label" for="productRange"><span data-i18n="contact_page.form_product_range">Product range</span> <span class="required" data-i18n="contact_page.form_required">*</span></label>
               <select id="productRange" name="productRange" class="form-select" required>
-                <option value="" data-i18n="contact_page.pr_placeholder">Please select�</option>
+                <option value="" data-i18n="contact_page.pr_placeholder">Please select…</option>
                 <option value="sheet-metal" data-i18n="contact_page.pr_sheet">Sheet metal cutting</option>
                 <option value="pipe-cutting" data-i18n="contact_page.pr_pipe">Pipe cutting</option>
                 <option value="combination" data-i18n="contact_page.pr_combo">Combination machines</option>
@@ -304,7 +304,7 @@
 
           <div class="form-group">
             <label class="form-label" for="requirements"><span data-i18n="contact_page.form_requirements">Inquiry / requirements</span> <span class="required" data-i18n="contact_page.form_required">*</span></label>
-            <textarea id="requirements" name="requirements" class="form-textarea" data-i18n="contact_page.req_placeholder" placeholder="Describe your application�" required></textarea>
+            <textarea id="requirements" name="requirements" class="form-textarea" data-i18n="contact_page.req_placeholder" placeholder="Describe your application…" required></textarea>
           </div>
 
           <div class="form-consent">
@@ -313,7 +313,7 @@
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg" style="width:100%" data-i18n="contact_page.form_submit">Submit request</button>
-          <p style="font-size:0.75rem;color:var(--text-muted);margin-top:12px;text-align:center" data-i18n="contact_page.form_footer_note">Response time: 1�2 business days</p>
+          <p style="font-size:0.75rem;color:var(--text-muted);margin-top:12px;text-align:center" data-i18n="contact_page.form_footer_note">Response time: 1&ndash;2 business days</p>
         </form>
       </div>
     </div>
@@ -401,7 +401,7 @@
         <a href="index.html" class="footer-logo-link" aria-label="HG Star Technology Home">
           <img class="footer-brand-logo-theme footer-brand-logo" src="img/logo/HGTECHlogo.svg" alt="HG Star Technology" width="180" height="44" loading="lazy" decoding="async">
         </a>
-        <p class="footer-member" data-i18n="footer.tagline">Member of HGTECH � Founded over 50 years ago, a pioneer in industrial laser applications in China</p>
+        <p class="footer-member" data-i18n="footer.tagline">Member of HGTECH &ndash; Founded over 50 years ago, a pioneer in industrial laser applications in China</p>
         <div style="margin-top: 16px; margin-bottom: 16px;">
           <p class="footer-cert-label" data-i18n="footer.certifications">Certifications</p>
           <div style="display: flex; gap: 12px; flex-wrap: wrap;">
@@ -442,13 +442,13 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span><a href="tel:+49228522640 77" style="color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500;" data-i18n="footer.phone">0228 522 640 77</a></span>
           </li>
-          <li style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 12px;" data-i18n="footer.businessHours">Mon�Fri � 08:00�18:00 CST</li>
+          <li style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 12px;" data-i18n="footer.businessHours">Mon&ndash;Fri &middot; 08:00&ndash;18:00 CST</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom" style="flex-direction: column; gap: 16px; align-items: flex-start; border-top: 1px solid var(--border-light); padding-top: 24px; margin-top: 24px;">
       <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 16px;">
-        <span class="footer-copyright" data-i18n="footer.copyright">� 2026 HG Star Technology Co., Ltd. � All rights reserved</span>
+        <span class="footer-copyright" data-i18n="footer.copyright">&copy; 2026 HG Star Technology Co., Ltd. &middot; All rights reserved</span>
         <div class="footer-bottom-links" style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
           <a href="https://www.hg-star.com" data-i18n="footer.website">hg-star.com</a>
           <a href="https://www.hglaserglobal.com" data-i18n="footer.globalWebsite">hglaserglobal.com</a>

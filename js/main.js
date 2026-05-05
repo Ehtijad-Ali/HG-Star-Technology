@@ -461,6 +461,10 @@ function renderProductCard(product) {
               <span class="spec-value">${val}</span>
             </div>
           `).join('')}
+          <div class="spec-item spec-item--price">
+            <span class="spec-label">${getTranslation('modal.dealerPrice', 'Dealer Price')}</span>
+            <span class="spec-value spec-value--price">${formatPrice(product.dealerPrice, product.currency)}</span>
+          </div>
         </div>
         <div class="product-card-footer product-card-footer-b2b">
           <div class="product-card-price">

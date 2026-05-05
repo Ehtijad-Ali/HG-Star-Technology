@@ -1579,6 +1579,15 @@ html.light .hero-stat-label {
 .section {
   padding: var(--section-pad-y) 0;
 }
+body.about-page .section {
+  border-top: 1px solid var(--border-light);
+}
+body.about-page .page-header {
+  border-bottom: 1px solid var(--border-light);
+}
+body.home-page main > * + * {
+  border-top: 1px solid var(--border-light);
+}
 html:not(.dark) .section[aria-labelledby="warranty-heading"],
 html:not(.dark) .section[aria-labelledby="res-heading"],
 html:not(.dark) .section[aria-labelledby="app-heading"],
@@ -2833,6 +2842,46 @@ html.dark .filter-select {
 .footer-bottom a {
   color: var(--text-muted) !important;
 }
+
+html:not(.dark) .site-footer {
+  background: #ffffff;
+  color: #111111;
+  border-top-color: #d9d9d9;
+}
+html:not(.dark) .site-footer::before {
+  opacity: 0.08;
+}
+html:not(.dark) .footer-grid {
+  border-bottom-color: #e3e3e3;
+}
+html:not(.dark) .footer-brand p,
+html:not(.dark) .footer-member,
+html:not(.dark) .footer-cert-label,
+html:not(.dark) .footer-title,
+html:not(.dark) .footer-links a,
+html:not(.dark) .footer-contact a,
+html:not(.dark) .footer-copyright,
+html:not(.dark) .footer-bottom-links a,
+html:not(.dark) .footer-bottom-time,
+html:not(.dark) .footer-bottom a {
+  color: #111111 !important;
+}
+html:not(.dark) .footer-title::after {
+  background: linear-gradient(90deg, #111111 0%, rgba(17,17,17,0.2) 100%);
+}
+html:not(.dark) .footer-links a:hover,
+html:not(.dark) .footer-bottom-links a:hover,
+html:not(.dark) .footer-contact a:hover {
+  color: #000000 !important;
+}
+html:not(.dark) .footer-contact svg {
+  color: #111111;
+}
+html:not(.dark) .footer-cert-badge {
+  background: #ffffff;
+  border-color: #111111;
+  color: #111111;
+}
 .footer-bottom a:hover {
   color: var(--red) !important;
 }
@@ -3021,8 +3070,31 @@ html.dark .filter-select {
   border-bottom: 1px solid var(--border-light);
 }
 html:not(.dark) .page-features,
-html:not(.dark) .series-overview {
+html:not(.dark) .series-overview,
+html:not(.dark) .page-feature-item,
+html:not(.dark) .series-overview-card,
+html:not(.dark) .contact-offer-panel,
+html:not(.dark) .contact-offer-response,
+html:not(.dark) .contact-info-item,
+html:not(.dark) .contact-info-icon,
+html:not(.dark) .faq-item,
+html:not(.dark) .faq-question,
+html:not(.dark) .faq-answer,
+html:not(.dark) .product-card,
+html:not(.dark) .spec-item,
+html:not(.dark) .spec-item--price,
+html:not(.dark) .product-card-footer,
+html:not(.dark) .stat-box,
+html:not(.dark) .info-grid-item,
+html:not(.dark) .category-card,
+html:not(.dark) .why-card,
+html:not(.dark) .feature-card,
+html:not(.dark) .b2b-card,
+html:not(.dark) .b2b-service-item,
+html:not(.dark) .b2b-ref-card,
+html:not(.dark) .testimonial-card {
   background: #ffffff !important;
+  border-color: var(--border-light) !important;
 }
 .page-features-grid {
   display: grid;
@@ -3360,6 +3432,9 @@ html:not(.dark) .series-overview {
 }
 
 /* Light mode form input improvements */
+html:not(.dark) .form-input,
+html:not(.dark) .form-textarea,
+html:not(.dark) .form-select,
 [data-theme="light"] .form-input,
 [data-theme="light"] .form-textarea,
 [data-theme="light"] .form-select,
@@ -3369,6 +3444,9 @@ html.light .form-select {
   background: #ffffff;
   border-color: #d4d4d4;
 }
+html:not(.dark) .form-input:focus,
+html:not(.dark) .form-textarea:focus,
+html:not(.dark) .form-select:focus,
 [data-theme="light"] .form-input:focus,
 [data-theme="light"] .form-textarea:focus,
 [data-theme="light"] .form-select:focus,
@@ -3378,6 +3456,18 @@ html.light .form-select:focus {
   background: #ffffff;
   border-color: var(--red);
   box-shadow: 0 0 0 3px rgba(227,30,36,0.15), inset 0 0 0 1px rgba(227,30,36,0.1);
+}
+.form-status,
+.form-consent {
+  background: var(--bg-secondary);
+}
+[data-theme="light"] .form-status,
+[data-theme="light"] .form-consent,
+html.light .form-status,
+html.light .form-consent,
+html:not(.dark) .form-status,
+html:not(.dark) .form-consent {
+  background: #ffffff;
 }
 .form-textarea { min-height: 130px; resize: vertical; }
 .form-select {
