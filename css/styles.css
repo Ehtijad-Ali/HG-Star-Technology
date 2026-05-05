@@ -1152,6 +1152,7 @@ html.dark #premiumInfoText { color: rgba(176,176,176,0.9); }
   .hero-split-left { display: none; }
   .hero-split-right { width: 100%; min-height: 100vh; }
   .hero-split-content { padding: calc(var(--header-height) + 40px) 24px 48px; }
+  .hero .hero-bg-video { display: none !important; }
 }
 
 /* ---- Hero Section ---- */
@@ -3018,6 +3019,10 @@ html.dark .filter-select {
 .page-features {
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-light);
+}
+html:not(.dark) .page-features,
+html:not(.dark) .series-overview {
+  background: #ffffff !important;
 }
 .page-features-grid {
   display: grid;
