@@ -2459,6 +2459,19 @@ html.dark .filter-select {
 .feature-card:hover .feature-icon svg {
   transform: scale(1.05);
 }
+.service-icon:hover {
+  border-color: rgba(227, 30, 36, 0.35);
+  box-shadow: var(--shadow-md);
+}
+.service-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--red);
+  transition: transform var(--transition-fast);
+}
+.service-icon:hover svg {
+  transform: scale(1.05);
+}
 .feature-card h3 {
   font-family: var(--font-body);
   font-size: 1.25rem; font-weight: 800;
@@ -3092,7 +3105,10 @@ html:not(.dark) .feature-card,
 html:not(.dark) .b2b-card,
 html:not(.dark) .b2b-service-item,
 html:not(.dark) .b2b-ref-card,
-html:not(.dark) .testimonial-card {
+html:not(.dark) .testimonial-card,
+html:not(.dark) .why-icon,
+html:not(.dark) .feature-icon,
+html:not(.dark) .service-icon {
   background: #ffffff !important;
   border-color: var(--border-light) !important;
 }
