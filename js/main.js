@@ -462,7 +462,7 @@ function renderProductCard(product) {
             </div>
           `).join('')}
           <div class="spec-item spec-item--price">
-            <span class="spec-label">${getTranslation('modal.dealerPrice', 'Dealer Price')}</span>
+            <span class="spec-label">${getTranslation('modal.dealerPrice', 'Client Price')}</span>
             <span class="spec-value spec-value--price">${formatPrice(product.dealerPrice, product.currency)}</span>
           </div>
         </div>
@@ -547,7 +547,7 @@ function openModal(productId, triggerEl) {
   const priceBlock = SHOW_LIST_PRICES ? `
         <div class="modal-price-row">
           <div class="modal-price">
-            <div class="modal-price-label">${getTranslation('modal.dealerPrice', 'Dealer Price (FOB)')}</div>
+            <div class="modal-price-label">${getTranslation('modal.dealerPrice', 'Client Price (FOB)')}</div>
             <div class="modal-price-value">${dealerPrice}</div>
           </div>
           ${endPrice !== 'Quote on Request' ? `

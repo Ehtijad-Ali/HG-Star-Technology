@@ -381,7 +381,7 @@
       "lastUpdated": "Last updated: January 2025"
     },
     "modal": {
-      "dealerPrice": "Dealer Price (FOB)",
+      "dealerPrice": "Client Price (FOB)",
       "endCustomerPrice": "End Customer Price",
       "requestQuote": "Request Quote for This Machine",
       "standardWarranty": "Warranty policy",
@@ -1059,7 +1059,7 @@
       "lastUpdated": "Zuletzt aktualisiert: Januar 2025"
     },
     "modal": {
-      "dealerPrice": "Händlerpreis (FOB)",
+      "dealerPrice": "Kundenpreis (FOB)",
       "endCustomerPrice": "Endkundenpreis",
       "requestQuote": "Angebot für diese Maschine anfordern",
       "standardWarranty": "Garantiebedingungen",
