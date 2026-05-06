@@ -276,6 +276,18 @@
       "cta_button": "Contact Our Team"
     },
     "products": {
+      "label": "Our Range",
+      "title": "Our Fiber Laser Solutions",
+      "subtitle": "The right machine for every application.",
+      "cutting": "Sheet Metal Cutting",
+      "cutting_desc": "High-precision cutting of steel, stainless steel & aluminum with up to 30kW laser power.",
+      "tube": "Tube Laser Systems",
+      "tube_desc": "Efficient cutting of pipes and profiles in highest precision for complex geometries.",
+      "welding_desc": "Flexible welding solutions for various materials and applications with superior quality.",
+      "cleaning_desc": "Fast, non-contact cleaning of metal surfaces – clean, efficient, and material-friendly.",
+      "learnMore": "Learn More",
+      "welding_name": "Laser Welding Machines",
+      "cleaning_name": "Laser Cleaning Systems",
       "category": "Product Category",
       "plateCutting": {
         "title": "Plate Cutting Machines",
@@ -606,7 +618,64 @@
         "badge": "MULTI-WAVELENGTH PLATFORM"
       }
     },
-    "quoteOnRequest": "Quote on Request"
+    "quoteOnRequest": "Quote on Request",
+    "heroNew": {
+      "badge": "UP TO <strong>30kW</strong> LASER POWER",
+      "title": "INDUSTRIAL<br><span class=\"text-red\">FIBER LASER</span><br>DIRECT FROM FACTORY",
+      "sub": "UP TO <strong>30kW</strong> POWER",
+      "desc": "Cutting, Welding &amp; Cleaning – no middlemen,<br>with worldwide support &amp; service.",
+      "trust1": "Direct from<br>Manufacturer",
+      "trust2": "Best<br>Price-Value",
+      "trust3": "Fast<br>Delivery",
+      "trust4": "Worldwide<br>Support",
+      "cta1": "Request Free Quote &rarr;",
+      "cta2": "Compare Machines",
+      "stat1": "<strong>15+</strong> Years Experience",
+      "stat2": "<strong>50+</strong> Countries Worldwide",
+      "stat3": "<strong>24/7</strong> Technical Support"
+    },
+    "whyHgtech": {
+      "title": "WHY COMPANIES<br>WORLDWIDE CHOOSE<br>HG TECH",
+      "desc": "HG Tech is one of the leading manufacturers of industrial laser technology worldwide. With in-house research, modern production and thousands of installed systems, we deliver high-performance solutions for metal processing.",
+      "link": "More about HG Tech &rarr;",
+      "card1Title": "IN-HOUSE DEVELOPMENT<br>&amp; PRODUCTION",
+      "card1Desc": "Core components and software are developed in-house and continuously optimized.",
+      "card2Title": "DEPLOYED WORLDWIDE<br>IN OVER 50 COUNTRIES",
+      "card2Desc": "Reliable machines trusted by industry operators around the world.",
+      "card3Title": "HIGH PERFORMANCE<br>UP TO 30kW",
+      "card3Desc": "For the highest demands and maximum productivity.",
+      "card4Title": "PROVEN TECHNOLOGY<br>FOR INDUSTRY",
+      "card4Desc": "Robust, precise and durable – engineered for continuous industrial use."
+    },
+    "advantages": {
+      "label": "Your Advantage",
+      "title": "More Than Just a Machine",
+      "support": "German Support & Contact Partner",
+      "support_desc": "Personal assistance on-site in German – fast, competent, and reliable.",
+      "complete": "Complete Solution, Not Just a Machine",
+      "complete_desc": "From consultation through installation to maintenance – all from one source.",
+      "install": "Installation & Training",
+      "install_desc": "We install and train your team so you're ready to produce immediately.",
+      "parts": "Fast Spare Parts & Service",
+      "parts_desc": "Spare parts available immediately and technical service exactly when needed.",
+      "direct": "Direct from Factory – No Middlemen",
+      "direct_desc": "Best prices through direct purchase from the manufacturer. No extra margins.",
+      "tagline": "We don't just deliver machines – we deliver <strong>functioning solutions for your business.</strong>"
+    },
+    "testimonials": {
+      "label": "Client Feedback",
+      "title": "What Our Clients Say",
+      "desc": "Representative feedback from manufacturers across Europe, North America and the Middle East. Full references available under NDA on request.",
+      "t1text": "\"We installed two SMART3015PRO lines for our subcontract sheet metal operation. The exchange table setup means near-zero downtime between jobs. HG Star's installation team was professional and the remote support since commissioning has been excellent.\"",
+      "t1name": "Michael S.",
+      "t1role": "Operations Director · Sheet Metal Job Shop, Germany",
+      "t2text": "\"The SMART-TP6030 tube cutting cell replaced three manual processes in our chassis production line. Cycle times dropped by 40%. Pricing direct from the factory was a significant advantage — no distributor markup, and delivery hit the promised window.\"",
+      "t2name": "James R.",
+      "t2role": "Production Manager · OEM Component Manufacturer, USA",
+      "t3text": "\"We run 30 kW plate cutting on structural profiles up to 25 mm. The SMART8025PRO handles the load without issue. On-site commissioning took four days and training was thorough. Spare parts reached us within 48 hours after a minor component swap.\"",
+      "t3name": "Ahmed K.",
+      "t3role": "General Manager · Structural Steel Contractor, UAE"
+    }
   },
   "de": {
     "nav": {
@@ -885,6 +954,18 @@
       "cta_button": "Kontaktieren Sie unser Team"
     },
     "products": {
+      "label": "Unser Angebot",
+      "title": "Unsere Faserlaser-Lösungen",
+      "subtitle": "Die richtige Maschine für jede Anwendung.",
+      "cutting": "Blechschneiden",
+      "cutting_desc": "Hochpräzises Schneiden von Stahl, Edelstahl & Aluminium mit bis zu 30 kW Laserleistung.",
+      "tube": "Rohrlaserssysteme",
+      "tube_desc": "Effizientes Schneiden von Rohren und Profilen in höchster Präzision für komplexe Geometrien.",
+      "welding_desc": "Flexible Schweißlösungen für verschiedene Materialien und Anwendungen mit überlegener Qualität.",
+      "cleaning_desc": "Schnelles, berührungsloses Reinigen von Metalloberflächen – sauber, effizient und materialschonend.",
+      "learnMore": "Mehr erfahren",
+      "welding_name": "Laserschweißmaschinen",
+      "cleaning_name": "Laserreinigungssysteme",
       "category": "Produktkategorie",
       "plateCutting": {
         "title": "Blechschneidemaschinen",
@@ -1215,6 +1296,63 @@
         "badge": "MULTI-WELLENLÄNGEN-PLATTFORM"
       }
     },
-    "quoteOnRequest": "Preis auf Anfrage"
+    "quoteOnRequest": "Preis auf Anfrage",
+    "heroNew": {
+      "badge": "BIS ZU <strong>30 kW</strong> LASERLEISTUNG",
+      "title": "INDUSTRIELLER<br><span class=\"text-red\">FASERLASER</span><br>DIREKT AB FABRIK",
+      "sub": "BIS ZU <strong>30 kW</strong> LEISTUNG",
+      "desc": "Schneiden, Schweißen &amp; Reinigen – ohne Zwischenhändler,<br>mit weltweitem Support &amp; Service.",
+      "trust1": "Direkt vom<br>Hersteller",
+      "trust2": "Bestes<br>Preis-Leistungs-Verhältnis",
+      "trust3": "Schnelle<br>Lieferung",
+      "trust4": "Weltweiter<br>Support",
+      "cta1": "Kostenloses Angebot &rarr;",
+      "cta2": "Maschinen vergleichen",
+      "stat1": "<strong>15+</strong> Jahre Erfahrung",
+      "stat2": "<strong>50+</strong> Länder weltweit",
+      "stat3": "<strong>24/7</strong> Technischer Support"
+    },
+    "whyHgtech": {
+      "title": "WARUM UNTERNEHMEN<br>WELTWEIT HG TECH<br>WÄHLEN",
+      "desc": "HG Tech gehört zu den führenden Herstellern von Industrielasertechnik weltweit. Mit eigener Forschung, moderner Fertigung und tausenden installierten Systemen liefern wir leistungsstarke Lösungen für die Metallverarbeitung.",
+      "link": "Mehr über HG Tech &rarr;",
+      "card1Title": "EIGENE ENTWICKLUNG<br>&amp; PRODUKTION",
+      "card1Desc": "Kernkomponenten und Software werden intern entwickelt und kontinuierlich optimiert.",
+      "card2Title": "WELTWEIT EINGESETZT<br>IN ÜBER 50 LÄNDERN",
+      "card2Desc": "Zuverlässige Maschinen, denen Industriebetreiber weltweit vertrauen.",
+      "card3Title": "HOCHLEISTUNG<br>BIS 30 kW",
+      "card3Desc": "Für höchste Anforderungen und maximale Produktivität.",
+      "card4Title": "BEWÄHRTE TECHNOLOGIE<br>FÜR DIE INDUSTRIE",
+      "card4Desc": "Robust, präzise und langlebig – entwickelt für den industriellen Dauerbetrieb."
+    },
+    "advantages": {
+      "label": "Ihr Vorteil",
+      "title": "Mehr als nur eine Maschine",
+      "support": "Deutschsprachiger Support & Ansprechpartner",
+      "support_desc": "Persönliche Betreuung vor Ort auf Deutsch – schnell, kompetent und zuverlässig.",
+      "complete": "Komplett-Lösung, nicht nur eine Maschine",
+      "complete_desc": "Von der Beratung über die Installation bis zur Wartung – alles aus einer Hand.",
+      "install": "Installation & Schulung",
+      "install_desc": "Wir installieren und schulen Ihr Team, damit Sie sofort produktionsbereit sind.",
+      "parts": "Schnelle Ersatzteile & Service",
+      "parts_desc": "Ersatzteile sofort verfügbar und technischer Service genau dann, wenn Sie ihn brauchen.",
+      "direct": "Direkt ab Fabrik – ohne Zwischenhändler",
+      "direct_desc": "Bestpreise durch Direktkauf beim Hersteller. Keine zusätzlichen Margen.",
+      "tagline": "Wir liefern keine Maschinen – wir liefern <strong>funktionierende Lösungen für Ihr Unternehmen.</strong>"
+    },
+    "testimonials": {
+      "label": "Kundenstimmen",
+      "title": "Was unsere Kunden sagen",
+      "desc": "Repräsentatives Feedback von Herstellern aus Europa, Nordamerika und dem Nahen Osten. Vollständige Referenzen auf Anfrage unter NDA verfügbar.",
+      "t1text": "\"Wir haben zwei SMART3015PRO-Linien für unsere Lohnblechbearbeitung installiert. Das Wechseltischsystem bedeutet nahezu keine Stillstandzeiten zwischen den Aufträgen. Das Installationsteam von HG Star war professionell und der Remote-Support seit der Inbetriebnahme war ausgezeichnet.\"",
+      "t1name": "Michael S.",
+      "t1role": "Betriebsleiter · Blech-Jobshop, Deutschland",
+      "t2text": "\"Die SMART-TP6030-Rohrschneidezelle ersetzte drei manuelle Prozesse in unserer Chassis-Fertigungslinie. Die Taktzeiten sanken um 40 %. Der Direktpreis ab Fabrik war ein deutlicher Vorteil – kein Händleraufschlag, und die Lieferung hielt das versprochene Zeitfenster ein.\"",
+      "t2name": "James R.",
+      "t2role": "Produktionsleiter · OEM-Komponentenhersteller, USA",
+      "t3text": "\"Wir schneiden mit 30 kW Blechdicken bis 25 mm auf Stahlprofilen. Der SMART8025PRO bewältigt die Last ohne Probleme. Die Inbetriebnahme vor Ort dauerte vier Tage und die Schulung war gründlich. Ersatzteile erreichten uns innerhalb von 48 Stunden nach einem kleineren Komponententausch.\"",
+      "t3name": "Ahmed K.",
+      "t3role": "Geschäftsführer · Stahlbau-Auftragnehmer, VAE"
+    }
   }
 }
