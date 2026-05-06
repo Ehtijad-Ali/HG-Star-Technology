@@ -31,10 +31,14 @@
   .legal-toc {
     position: sticky;
     top: calc(var(--header-height) + 24px);
-    background: var(--bg-secondary);
+    background: #ffffff;
     border: 1px solid var(--border-light);
     border-radius: var(--radius-md);
     padding: 24px 20px;
+  }
+  [data-theme="dark"] .legal-toc,
+  html.dark .legal-toc {
+    background: #000000;
   }
   .legal-toc-title {
     font-family: var(--font-display);
@@ -139,7 +143,7 @@
   .legal-meta svg { flex-shrink: 0; opacity: 0.5; }
   .legal-cta-box {
     margin-top: 48px;
-    background: var(--bg-secondary);
+    background: #ffffff;
     border: 1px solid var(--border-light);
     border-radius: var(--radius-md);
     padding: 32px;
@@ -148,6 +152,10 @@
     justify-content: space-between;
     gap: 24px;
     flex-wrap: wrap;
+  }
+  [data-theme="dark"] .legal-cta-box,
+  html.dark .legal-cta-box {
+    background: #000000;
   }
   .legal-cta-box-text h3 {
     font-family: var(--font-body);
