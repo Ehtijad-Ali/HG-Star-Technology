@@ -1826,6 +1826,37 @@ html.dark .section,
 body.about-page .section {
   border-top: 1px solid var(--border-light);
 }
+.about-service-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+.about-service-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(227,30,36,0.3);
+}
+[data-theme="dark"] .about-service-card,
+html.dark .about-service-card {
+  background: #111111;
+}
+[data-theme="dark"] .about-service-card h4,
+html.dark .about-service-card h4 {
+  color: #ffffff !important;
+}
+[data-theme="dark"] .about-service-card p,
+html.dark .about-service-card p {
+  color: rgba(255,255,255,0.7) !important;
+}
+.about-stats-section {
+  background: #ffffff;
+}
+[data-theme="dark"] .about-stats-section,
+html.dark .about-stats-section {
+  background: #000000;
+}
 body.about-page .page-header {
   border-bottom: 1px solid var(--border-light);
 }
