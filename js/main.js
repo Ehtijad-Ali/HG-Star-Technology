@@ -71,7 +71,30 @@ function initHeaderScroll() {
 // ========================================
 // Product Card Rendering
 // ========================================
-function getCategoryImage(category) {
+function getCategoryImage(category, model) {
+  if (category === 'cutting' && model) {
+    const m = model.toUpperCase().replace(/\s/g, '');
+    if (m.includes('6025') || m.includes('6015') || m.includes('8025') || m.includes('6025PLUS') || m.includes('6025+')) {
+      return 'img/machines/Platecutting/Smart 6025Plus-T1.webp';
+    }
+    if (m.includes('HP500') || m.includes('4020') || m.includes('4015')) {
+      return 'img/machines/Platecutting/Smart HP500-4.webp';
+    }
+    if (m.includes('3015PRO') || m.includes('3015 PRO')) {
+      return 'img/machines/Platecutting/Smart 3015Pro1.webp';
+    }
+    return 'img/machines/Platecutting/Smart30315E.webp';
+  }
+  if (category === 'combo' && model) {
+    const m = model.toUpperCase().replace(/\s/g, '');
+    if (m.includes('6025')) {
+      return 'img/machines/Combination/Smart 6025Plus-T1.webp';
+    }
+    if (m.includes('4015') || m.includes('4020')) {
+      return 'img/machines/Combination/Smart Pro-T1.webp';
+    }
+    return 'img/machines/Combination/Smart 3015T1.webp';
+  }
   const images = {
     cutting: 'img/machines/PlateCutting.webp',
     tube: 'img/machines/PipeCutting.webp',
@@ -433,7 +456,7 @@ function getApplicationTag(product) {
 
 function renderProductCard(product) {
   const highlights = pickHighlightSpecs(product, 3);
-  const img = getCategoryImage(product.category);
+  const img = getCategoryImage(product.category, product.model);
   const priceLabel = SHOW_LIST_PRICES
     ? formatPrice(product.dealerPrice, product.currency)
     : getTranslation('modal.quoteOnRequest', 'Quote on request');
@@ -541,7 +564,7 @@ function openModal(productId, triggerEl) {
 
   const specs = product.specs || {};
   const specEntries = Object.entries(specs);
-  const img = getCategoryImage(product.category);
+  const img = getCategoryImage(product.category, product.model);
   const dealerPrice = formatPrice(product.dealerPrice, product.currency);
   const endPrice = formatPrice(product.endPrice, product.currency);
   const priceBlock = SHOW_LIST_PRICES ? `
