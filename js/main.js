@@ -74,13 +74,13 @@ function initHeaderScroll() {
 function getCategoryImage(category, model) {
   if (category === 'cutting' && model) {
     const m = model.toUpperCase().replace(/\s/g, '');
-    if (m.includes('6025') || m.includes('6015') || m.includes('8025') || m.includes('6025PLUS') || m.includes('6025+')) {
-      return 'img/machines/Platecutting/Smart 6025Plus-T1.webp';
+    if (m.includes('6025') || m.includes('8025') || m.includes('6025PLUS') || m.includes('6025+') || m.includes('4020')) {
+      return 'img/machines/Platecutting/Smart 3015Pro1.webp';
     }
-    if (m.includes('HP500') || m.includes('4020') || m.includes('4015')) {
+    if (m.includes('HP500')) {
       return 'img/machines/Platecutting/Smart HP500-4.webp';
     }
-    if (m.includes('3015PRO') || m.includes('3015 PRO')) {
+    if (m.includes('3015PRO')) {
       return 'img/machines/Platecutting/Smart 3015Pro1.webp';
     }
     return 'img/machines/Platecutting/Smart30315E.webp';
@@ -90,18 +90,18 @@ function getCategoryImage(category, model) {
     if (m.includes('6025')) {
       return 'img/machines/Combination/Smart 6025Plus-T1.webp';
     }
-    if (m.includes('4015') || m.includes('4020')) {
+    if (m.includes('4020') || m.includes('3015PRO') || m.includes('4015')) {
       return 'img/machines/Combination/Smart Pro-T1.webp';
     }
     return 'img/machines/Combination/Smart 3015T1.webp';
   }
   const images = {
     cutting: 'img/machines/PlateCutting.webp',
-    tube: 'img/machines/PipeCutting.webp',
+    tube: 'img/machines/Tube-Cutting/PipeCutting.webp',
     combo: 'img/machines/Combine.webp',
-    welding: 'img/machines/welding.webp',
-    cleaning: 'img/machines/Cleaning.webp',
-    marking: 'img/machines/marking.webp'
+    welding: 'img/machines/Welding/welding.webp',
+    cleaning: 'img/machines/cleaning/Cleaning.webp',
+    marking: 'img/machines/Marking/marking.webp'
   };
   return images[category] || images.cutting;
 }
